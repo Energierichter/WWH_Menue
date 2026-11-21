@@ -25,7 +25,19 @@
   const fmtDate = (iso, opts) => new Date(iso + "T12:00:00").toLocaleDateString("de-DE", opts);
   const todayISO = () => { const d = new Date(); d.setMinutes(d.getMinutes() - d.getTimezoneOffset()); return d.toISOString().slice(0, 10); };
 
-  const state = { index: null, restaurant: null, week: null, menu: null, day: null, filter: store.get("filter") || "all", picked: null };
+  // heute (falls Werktag) + die nächsten Werktage, insgesamt 3
+  const isoOf = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+  const WD_NAMES = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
+  function targetDays(n = 3) {
+    const out = []; const d = new Date(); d.setHours(12, 0, 0, 0);
+    while (out.length < n) {
+      if (d.getDay() >= 1 && d.getDay() <= 5) out.push({ date: isoOf(d), weekday: WD_NAMES[d.getDay()] });
+      d.setDate(d.getDate() + 1);
+    }
+    return out;
+  }
+
+  const state = { index: null, restaurant: null, menu: null, day: null, filter: store.get("filter") || "all", picked: null };
 
   // ---------- Theme ----------
   const applyTheme = (t) => { if (t) document.documentElement.dataset.theme = t; };
@@ -37,10 +49,10 @@
     applyTheme(next); store.set("theme", next);
   });
 
-  // ---------- Routing (#restaurant/week) ----------
-  const readHash = () => { const [r, w] = location.hash.replace(/^#\/?/, "").split("/"); return { r, w }; };
+  // ---------- Routing (#restaurant) ----------
+  const readHash = () => location.hash.replace(/^#\/?/, "").split("/")[0];
   const writeHash = () => {
-    const h = `#${state.restaurant.id}${state.week && state.week !== state.restaurant.weeks[0] ? "/" + state.week : ""}`;
+    const h = `#${state.restaurant.id}`;
     if (location.hash !== h) history.replaceState(null, "", h);
   };
 
@@ -65,7 +77,7 @@
       b.addEventListener("click", () => selectRestaurant(b.dataset.id)));
   }
 
-  async function selectRestaurant(id, week) {
+  async function selectRestaurant(id) {
     const r = state.index.restaurants.find((x) => x.id === id) || state.index.restaurants[0];
     state.restaurant = r;
     state.picked = null;
@@ -84,25 +96,37 @@
     ].filter(Boolean).join("");
     $("#sourceLink").href = r.url || "#";
 
+    writeHash();
     const weeks = r.weeks || [];
-    $("#weekSelect").closest(".select").hidden = weeks.length < 2;
     if (!weeks.length) { renderProfile(r); return; }
-    $("#weekSelect").innerHTML = weeks.map((w, i) => {
-      const end = new Date(w + "T12:00:00"); end.setDate(end.getDate() + 4);
-      const label = `${fmtDate(w, { day: "2-digit", month: "2-digit" })} – ${end.toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit", year: "numeric" })}`;
-      return `<option value="${w}">${i === 0 ? "Aktuell · " : ""}${label}</option>`;
-    }).join("");
-    await selectWeek(weeks.includes(week) ? week : weeks[0]);
+    await loadUpcoming(r);
   }
 
-  async function selectWeek(week) {
-    state.week = week || null;
-    $("#weekSelect").value = week || "";
-    writeHash();
-    $("#menu").innerHTML = `<div class="grid">${'<div class="skeleton"></div>'.repeat(4)}</div>`;
+  // Lädt die Wochendateien, die heute + die nächsten 2 Werktage abdecken,
+  // und baut daraus genau diese drei Tage zusammen.
+  async function loadUpcoming(r) {
+    $("#menu").innerHTML = `<div class="grid">${'<div class="skeleton"></div>'.repeat(3)}</div>`;
+    const targets = targetDays(3);
     try {
-      const file = week ? `${week}.json` : "latest.json";
-      state.menu = await getJSON(`data/${state.restaurant.id}/${file}`);
+      const latest = await getJSON(`data/${r.id}/latest.json`);
+      if (state.restaurant !== r) return;
+      if (latest.kind === "images") { state.menu = latest; renderGallery(); return; }
+
+      const first = new Date(targets[0].date + "T12:00:00"); first.setDate(first.getDate() - 6);
+      const lo = isoOf(first), hi = targets[targets.length - 1].date;
+      const files = (r.weeks || []).filter((w) => w >= lo && w <= hi);
+      const menus = (await Promise.all(files.map((w) => getJSON(`data/${r.id}/${w}.json`).catch(() => null)))).filter(Boolean);
+      if (state.restaurant !== r) return;
+
+      const byDate = {};
+      menus.concat([latest]).forEach((m) => m.days.forEach((d) => { byDate[d.date] = byDate[d.date] || d; }));
+      const newest = menus.concat([latest]).sort((a, b) => b.week.from.localeCompare(a.week.from))[0];
+      state.menu = {
+        ...newest,
+        legend: { allergens: Object.assign({}, ...menus.concat([latest]).map((m) => m.legend?.allergens || {})) },
+        fetchedAt: latest.fetchedAt,
+        days: targets.map((t) => byDate[t.date] || { ...t, dishes: [], missing: true }),
+      };
     } catch (e) {
       state.menu = null;
       $("#toolbar").hidden = true;
@@ -110,9 +134,7 @@
       $("#menu").innerHTML = `<div class="empty"><div class="big">🥲</div><p>Für dieses Restaurant liegt noch kein Speiseplan vor.</p></div>`;
       return;
     }
-    const t = todayISO();
-    state.day = state.menu.days.some((d) => d.date === t) ? t : "week";
-    if (state.menu.kind === "images") { renderGallery(); return; }
+    state.day = "all";
     $("#surprise").hidden = false;
     renderAll();
   }
@@ -168,8 +190,8 @@
   function renderToolbar() {
     $("#toolbar").hidden = false;
     const t = todayISO();
-    const tabs = [{ key: "week", wd: "Woche", dt: "alle Tage" }].concat(
-      state.menu.days.map((d) => ({ key: d.date, wd: d.weekday.slice(0, 2), dt: fmtDate(d.date, { day: "2-digit", month: "2-digit" }), today: d.date === t })));
+    const tabs = [{ key: "all", wd: "Übersicht", dt: "3 Werktage" }].concat(
+      state.menu.days.map((d) => ({ key: d.date, wd: d.date === t ? "Heute" : d.weekday.slice(0, 2), dt: fmtDate(d.date, { day: "2-digit", month: "2-digit" }), today: d.date === t })));
     $("#days").style.gridTemplateColumns = `repeat(${tabs.length}, minmax(64px, 1fr))`;
     $("#days").innerHTML = tabs.map((x) => `
       <button class="day${x.today ? " today" : ""}" role="tab" type="button" data-key="${x.key}" aria-selected="${state.day === x.key}">
@@ -210,15 +232,17 @@
   const filterFn = () => (FILTERS.find((f) => f.id === state.filter) || FILTERS[0]).test;
 
   function renderMenu() {
-    const days = state.day === "week" ? state.menu.days : state.menu.days.filter((d) => d.date === state.day);
+    const days = state.day === "all" ? state.menu.days : state.menu.days.filter((d) => d.date === state.day);
     const test = filterFn();
     const html = days.map((day) => {
       const dishes = day.dishes.map((d, i) => [d, `${day.date}#${i}`]).filter(([d]) => test(d));
-      const body = dishes.length
+      const body = day.missing
+        ? `<div class="empty"><div class="big">🕐</div><p>Für diesen Tag ist noch kein Speiseplan veröffentlicht.</p></div>`
+        : dishes.length
         ? `<div class="grid">${dishes.map(([d, k]) => dishCard(d, k)).join("")}</div>`
         : `<div class="empty"><div class="big">🍃</div><p>Keine passenden Gerichte an diesem Tag.</p></div>`;
       return `<section class="day-block">
-        <div class="day-head"><h2>${esc(day.weekday)}</h2><span>${fmtDate(day.date, { day: "numeric", month: "long" })}</span></div>
+        <div class="day-head"><h2>${day.date === todayISO() ? "Heute · " : ""}${esc(day.weekday)}</h2><span>${fmtDate(day.date, { day: "numeric", month: "long" })}</span></div>
         ${body}</section>`;
     }).join("");
     $("#menu").innerHTML = html || `<div class="empty"><div class="big">📭</div><p>Für diese Woche gibt es keine Einträge.</p></div>`;
@@ -246,7 +270,7 @@
   $("#surprise").addEventListener("click", () => {
     if (!state.menu) return;
     const t = todayISO();
-    if (state.day === "week") state.day = state.menu.days.some((d) => d.date === t) ? t : state.menu.days[0]?.date;
+    if (state.day === "all") state.day = (state.menu.days.find((d) => d.date >= t && !d.missing) || state.menu.days[0])?.date;
     const day = state.menu.days.find((d) => d.date === state.day);
     if (!day) return;
     const test = filterFn();
@@ -268,10 +292,9 @@
   });
 
   $("#lightbox").addEventListener("click", () => $("#lightbox").close());
-  $("#weekSelect").addEventListener("change", (e) => selectWeek(e.target.value));
   window.addEventListener("hashchange", () => {
-    const { r, w } = readHash();
-    if (r && (r !== state.restaurant?.id || (w || state.restaurant.weeks[0]) !== state.week)) selectRestaurant(r, w);
+    const r = readHash();
+    if (r && r !== state.restaurant?.id) selectRestaurant(r);
   });
 
   // ---------- Boot ----------
@@ -282,7 +305,6 @@
       $("#menu").innerHTML = `<div class="empty"><div class="big">⚠️</div><p>Daten konnten nicht geladen werden.</p></div>`;
       return;
     }
-    const { r, w } = readHash();
-    selectRestaurant(r || store.get("restaurant") || state.index.restaurants[0]?.id, w);
+    selectRestaurant(readHash() || store.get("restaurant") || state.index.restaurants[0]?.id);
   })();
 })();
