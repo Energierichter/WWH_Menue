@@ -48,19 +48,25 @@ def main():
     for r in restaurants:
         rid = r["id"]
         out_dir = DATA / rid
-        out_dir.mkdir(parents=True, exist_ok=True)
+        if r.get("parser"):
+            out_dir.mkdir(parents=True, exist_ok=True)
         status = "ok"
-        try:
+        if not r.get("parser"):
+            status = "info"
+        else:
+          try:
             html = Path(local[rid]).read_text(encoding="utf-8") if rid in local else fetch(r["url"])
-            menu = PARSERS[r["parser"]](html, r["url"])
+            menu = PARSERS[r["parser"]](html, r["url"], r.get("options"))
+            n = sum(len(d["dishes"]) for d in menu["days"]) + len(menu.get("images", []))
+            if n == 0:
+                raise ValueError("no menu items found")
             menu["restaurant"] = rid
             menu["fetchedAt"] = now
             payload = json.dumps(menu, ensure_ascii=False, indent=2)
             (out_dir / "latest.json").write_text(payload, encoding="utf-8")
             (out_dir / f"{menu['week']['from']}.json").write_text(payload, encoding="utf-8")
-            n = sum(len(d["dishes"]) for d in menu["days"])
-            print(f"[{rid}] {menu['week']['from']} – {menu['week']['to']}: {n} dishes")
-        except Exception as e:  # keep the previous data if a site is down
+            print(f"[{rid}] {menu['week']['from']} – {menu['week']['to']}: {n} items")
+          except Exception as e:  # keep the previous data if a site is down
             failures += 1
             status = f"error: {e}"
             print(f"[{rid}] FAILED: {e}", file=sys.stderr)
@@ -68,15 +74,17 @@ def main():
         weeks = sorted(
             (p.stem for p in out_dir.glob("????-??-??.json")), reverse=True
         )
-        entry = {k: v for k, v in r.items() if k != "parser"}
+        entry = {k: v for k, v in r.items() if k not in ("parser", "options")}
         entry.update({"weeks": weeks, "status": status, "checkedAt": now})
+        if r.get("parser") == "squarespace_images":
+            entry["kind"] = "images"
         index.append(entry)
 
     (DATA / "index.json").write_text(
         json.dumps({"updatedAt": now, "restaurants": index}, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
-    if failures == len(restaurants):
+    if failures and failures == sum(1 for r in restaurants if r.get("parser")):
         sys.exit(1)
 
 

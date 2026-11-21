@@ -1,10 +1,11 @@
 {
-  "updatedAt": "2026-11-21T18:55:58+00:00",
+  "updatedAt": "2026-11-21T19:07:26+00:00",
   "restaurants": [
     {
       "id": "stmuv",
       "name": "Casino StMUV",
-      "subtitle": "Bayerisches Staatsministerium für Umwelt und Verbraucherschutz",
+      "subtitle": "Kantine im Bayerischen Staatsministerium für Umwelt und Verbraucherschutz",
+      "cuisine": "Kantine",
       "address": "Rosenkavalierplatz 2, 81925 München",
       "hours": "Mo–Fr 11:00–13:30",
       "url": "https://www.stmuv.bayern.de/speiseplan/",
@@ -14,7 +15,85 @@
         "2026-11-23"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-21T18:55:58+00:00"
+      "checkedAt": "2026-11-21T19:07:26+00:00"
+    },
+    {
+      "id": "foehn",
+      "name": "Bistro Föhn",
+      "subtitle": "Cucina mediterranea italiana – täglich wechselnde Karte",
+      "cuisine": "Italienisch",
+      "address": "Rosenkavalierplatz 12, 81925 München",
+      "hours": "Mo–Sa 11:30–22:30 · So Ruhetag",
+      "phone": "+49 89 915175",
+      "url": "https://bistrofoehn.de/",
+      "color": "#b5452f",
+      "emoji": "🍝",
+      "weeks": [
+        "2026-11-16"
+      ],
+      "status": "ok",
+      "checkedAt": "2026-11-21T19:07:26+00:00",
+      "kind": "images"
+    },
+    {
+      "id": "cedar-lounge",
+      "name": "Cedar Lounge",
+      "subtitle": "Libanesische Küche",
+      "cuisine": "Libanesisch",
+      "address": "Rosenkavalierplatz 12, 81925 München",
+      "hours": "Mo–Fr 12–23 · Sa 16–23 · So 12–23 · Mittagskarte 11:30–14:30",
+      "url": "https://www.cedar-lounge.de/",
+      "info": "Die Mittagskarte wird nicht maschinenlesbar veröffentlicht (Website mit Bot-Schutz). Bitte auf der Website nachsehen.",
+      "color": "#3d7d4a",
+      "emoji": "🌲",
+      "weeks": [],
+      "status": "info",
+      "checkedAt": "2026-11-21T19:07:26+00:00"
+    },
+    {
+      "id": "namaste",
+      "name": "Namaste",
+      "subtitle": "Indisches Restaurant",
+      "cuisine": "Indisch",
+      "address": "Rosenkavalierplatz 12, 81925 München",
+      "hours": "Mittag täglich 11:30–15:00 (laut OpenTable)",
+      "phone": "+49 89 94003403",
+      "url": "https://www.opentable.com/r/namaste-indisches-restaurant-munchen",
+      "info": "Keine eigene Website mit Speiseplan gefunden. Infos & Reservierung über OpenTable.",
+      "color": "#d17a1f",
+      "emoji": "🍛",
+      "weeks": [],
+      "status": "info",
+      "checkedAt": "2026-11-21T19:07:26+00:00"
+    },
+    {
+      "id": "farry",
+      "name": "farry coffee grill bar",
+      "subtitle": "Frühstück, Grill & internationale Küche mit Terrasse",
+      "cuisine": "International",
+      "address": "Rosenkavalierplatz 15, 81925 München",
+      "hours": "Lunch-Karte 11–15 Uhr (laut Gästebewertungen)",
+      "url": "https://farry.eu/",
+      "info": "Kein Online-Speiseplan verfügbar (Website war zuletzt nicht erreichbar).",
+      "color": "#6a5acd",
+      "emoji": "🍔",
+      "weeks": [],
+      "status": "info",
+      "checkedAt": "2026-11-21T19:07:26+00:00"
+    },
+    {
+      "id": "amal",
+      "name": "AMAL Café",
+      "subtitle": "Café & Bäckerei – Frühstück und hausgemachte Desserts",
+      "cuisine": "Café",
+      "address": "Rosenkavalierplatz 14, 81925 München",
+      "url": "https://amal-cafe.de/amal-rosenkavalierplatz/",
+      "info": "Café ohne wechselnden Mittagstisch – Angebot siehe Website.",
+      "color": "#a0703c",
+      "emoji": "🥐",
+      "weeks": [],
+      "status": "info",
+      "checkedAt": "2026-11-21T19:07:26+00:00"
     }
   ]
 }

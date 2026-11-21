@@ -6,9 +6,16 @@ Filtern (vegan, ohne Fleisch, ohne Schwein) und „🎲 Was ess ich heute?".
 
 Aktuell enthalten:
 
-| Restaurant | Quelle |
-|---|---|
-| Casino StMUV, München | https://www.stmuv.bayern.de/speiseplan/ |
+Alle Restaurants am Rosenkavalierplatz, München:
+
+| Restaurant | Art | Quelle |
+|---|---|---|
+| Casino StMUV (Nr. 2) | Speiseplan, automatisch ausgelesen | https://www.stmuv.bayern.de/speiseplan/ |
+| Bistro Föhn (Nr. 12) | Fotokarte, automatisch übernommen | https://bistrofoehn.de/ |
+| Cedar Lounge (Nr. 12) | Nur Infos & Links (Website mit Bot-Schutz) | https://www.cedar-lounge.de/ |
+| Namaste (Nr. 12) | Nur Infos & Links (keine eigene Website) | OpenTable |
+| farry coffee grill bar (Nr. 15) | Nur Infos & Links | https://farry.eu/ |
+| AMAL Café (Nr. 14) | Nur Infos & Links | https://amal-cafe.de/ |
 
 ## So funktioniert's
 
@@ -36,7 +43,8 @@ Danach ist die Seite unter `https://<user>.github.io/<repo>/` erreichbar.
 
 ## Weiteres Restaurant hinzufügen
 
-1. Eintrag in `restaurants.json` ergänzen (`id`, `name`, `url`, `parser`, optional `address`, `hours`, `color`, `emoji`).
+1. Eintrag in `restaurants.json` ergänzen (`id`, `name`, `url`, `parser`, optional `cuisine`, `address`, `hours`, `phone`, `info`, `color`, `emoji`).
+   Ohne auslesbaren Speiseplan: `"parser": null` – das Restaurant erscheint dann mit Infos & Links.
 2. Hat die Seite ein neues Format: `scraper/parsers/<name>.py` mit `parse(html, url) -> dict`
    anlegen (Format siehe `stmuv.py`) und in `scraper/parsers/__init__.py` registrieren.
 3. Lokal testen: `pip install -r scraper/requirements.txt && python scraper/scrape.py`

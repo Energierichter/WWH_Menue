@@ -82,7 +82,7 @@ def _parse_week(soup):
     return f, t
 
 
-def parse(html: str, base_url: str = "") -> dict:
+def parse(html: str, base_url: str = "", options=None) -> dict:
     soup = BeautifulSoup(html, "html.parser")
     start, end = _parse_week(soup)
 

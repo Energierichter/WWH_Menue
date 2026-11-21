@@ -51,13 +51,15 @@
   }
 
   // ---------- Picker ----------
+  const cardBadge = (r) => !r.weeks?.length ? "Infos & Links" : r.kind === "images" ? "Fotokarte" : "Speiseplan";
+
   function renderPicker() {
     $("#picker").innerHTML = state.index.restaurants.map((r) => `
       <button class="r-card" type="button" data-id="${esc(r.id)}" style="--rc:${esc(r.color || "")}"
         aria-pressed="${state.restaurant && r.id === state.restaurant.id}">
         <span class="r-emoji">${esc(r.emoji || "🍽️")}</span>
-        <span><strong>${esc(r.name)}</strong><small>${esc(r.hours || r.address || "")}</small></span>
-        ${r.status && r.status !== "ok" ? '<span class="dot" title="Letzte Aktualisierung fehlgeschlagen"></span>' : ""}
+        <span><strong>${esc(r.name)}</strong><small>${esc(r.cuisine || "")}${r.cuisine ? " · " : ""}${esc(cardBadge(r))}</small></span>
+        ${String(r.status || "").startsWith("error") ? '<span class="dot" title="Letzte Aktualisierung fehlgeschlagen"></span>' : ""}
       </button>`).join("");
     $("#picker").querySelectorAll(".r-card").forEach((b) =>
       b.addEventListener("click", () => selectRestaurant(b.dataset.id)));
@@ -75,13 +77,16 @@
     $("#rName").textContent = r.name;
     $("#rSub").textContent = r.subtitle || "";
     $("#rMeta").innerHTML = [
-      r.address && `<li>📍 ${esc(r.address)}</li>`,
+      r.address && `<li>📍 <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(r.name + ", " + r.address)}" target="_blank" rel="noopener">${esc(r.address)}</a></li>`,
       r.hours && `<li>🕚 ${esc(r.hours)}</li>`,
-      r.url && `<li>🔗 <a href="${esc(r.url)}" target="_blank" rel="noopener">Original-Speiseplan</a></li>`,
+      r.phone && `<li>📞 <a href="tel:${esc(r.phone.replace(/\s/g, ""))}">${esc(r.phone)}</a></li>`,
+      r.url && `<li>🔗 <a href="${esc(r.url)}" target="_blank" rel="noopener">Website</a></li>`,
     ].filter(Boolean).join("");
     $("#sourceLink").href = r.url || "#";
 
     const weeks = r.weeks || [];
+    $("#weekSelect").closest(".select").hidden = weeks.length < 2;
+    if (!weeks.length) { renderProfile(r); return; }
     $("#weekSelect").innerHTML = weeks.map((w, i) => {
       const end = new Date(w + "T12:00:00"); end.setDate(end.getDate() + 4);
       const label = `${fmtDate(w, { day: "2-digit", month: "2-digit" })} – ${end.toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit", year: "numeric" })}`;
@@ -107,7 +112,54 @@
     }
     const t = todayISO();
     state.day = state.menu.days.some((d) => d.date === t) ? t : "week";
+    if (state.menu.kind === "images") { renderGallery(); return; }
+    $("#surprise").hidden = false;
     renderAll();
+  }
+
+  function hideMenuChrome() {
+    $("#toolbar").hidden = true;
+    $("#surprise").hidden = true;
+    ["#weekly", "#notes", "#legend"].forEach((s) => ($(s).hidden = true));
+  }
+
+  function renderProfile(r) {
+    state.menu = null;
+    hideMenuChrome();
+    $("#updated").textContent = "";
+    $("#menu").innerHTML = `
+      <div class="profile">
+        <div class="profile-emoji" style="--rc:${esc(r.color || "")}">${esc(r.emoji || "🍽️")}</div>
+        <div>
+          <h2>Kein Online-Speiseplan</h2>
+          <p>${esc(r.info || "Für dieses Restaurant gibt es keinen automatisch abrufbaren Speiseplan.")}</p>
+          <div class="profile-actions">
+            ${r.url ? `<a class="btn primary" href="${esc(r.url)}" target="_blank" rel="noopener">Zur Website ↗</a>` : ""}
+            ${r.phone ? `<a class="btn" href="tel:${esc(r.phone.replace(/\s/g, ""))}">📞 Anrufen</a>` : ""}
+          </div>
+        </div>
+      </div>`;
+  }
+
+  function renderGallery() {
+    hideMenuChrome();
+    const imgs = state.menu.images || [];
+    const ts = state.menu.fetchedAt ? new Date(state.menu.fetchedAt).toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" }) : "–";
+    $("#updated").textContent = `Zuletzt aktualisiert: ${ts}`;
+    $("#menu").innerHTML = `
+      <p class="gallery-hint">Dieses Restaurant veröffentlicht seine Karte als Fotos – automatisch von der Website übernommen. Zum Vergrößern antippen.</p>
+      <div class="gallery">${imgs.map((im, i) => `
+        <figure>
+          <button type="button" class="shot" data-i="${i}" aria-label="${esc(im.section)} vergrößern">
+            <img src="${esc(im.thumb || im.src)}" alt="${esc(im.alt)}" loading="lazy" referrerpolicy="no-referrer">
+          </button>
+          <figcaption>${esc(im.section)}</figcaption>
+        </figure>`).join("")}</div>`;
+    $("#menu").querySelectorAll(".shot").forEach((b) => b.addEventListener("click", () => {
+      const im = imgs[+b.dataset.i];
+      $("#lightboxImg").src = im.src; $("#lightboxImg").alt = im.alt; $("#lightboxCap").textContent = im.section;
+      $("#lightbox").showModal();
+    }));
   }
 
   // ---------- Rendering ----------
@@ -215,6 +267,7 @@
     tick();
   });
 
+  $("#lightbox").addEventListener("click", () => $("#lightbox").close());
   $("#weekSelect").addEventListener("change", (e) => selectWeek(e.target.value));
   window.addEventListener("hashchange", () => {
     const { r, w } = readHash();
