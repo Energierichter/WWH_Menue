@@ -35,6 +35,19 @@
     "emoji": "🍝"
   },
   {
+    "id": "rothof",
+    "name": "Rothof Restaurant",
+    "subtitle": "Internationale Küche im Grünen am Denninger Anger – Mittagstisch Mo–Fr",
+    "cuisine": "International",
+    "address": "Denninger Str. 120, 81925 München",
+    "hours": "Täglich 10:00–24:00 · Mittagstisch Mo–Fr 11:30–14:30",
+    "phone": "+49 89 916262",
+    "url": "https://rothof.de/restaurant/",
+    "parser": "rothof",
+    "color": "#c8102e",
+    "emoji": "🌳"
+  },
+  {
     "id": "cedar-lounge",
     "name": "Cedar Lounge",
     "subtitle": "Libanesische Küche",

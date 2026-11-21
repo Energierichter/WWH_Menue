@@ -139,6 +139,7 @@ h1, h2, .brand-text { font-family: Fraunces, Georgia, serif; letter-spacing: -.0
 .tag.schwein { color: var(--t-schwein); background: var(--t-schwein-bg); }
 .tag.rind { color: var(--t-rind); background: var(--t-rind-bg); }
 .tag.fisch { color: var(--t-fisch); background: var(--t-fisch-bg); }
+.tag.fleisch { color: var(--t-rind); background: var(--t-rind-bg); }
 .allergens { display: flex; flex-wrap: wrap; gap: 4px; }
 .allergens abbr { font-size: 11px; text-decoration: none; border: 1px solid var(--line); color: var(--muted); border-radius: 6px; padding: 1px 6px; cursor: help; }
 .dish.picked { outline-color: var(--accent); transform: scale(1.02); }

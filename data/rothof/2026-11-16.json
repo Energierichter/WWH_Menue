@@ -1,0 +1,179 @@
+{
+  "week": {
+    "from": "2026-11-16",
+    "to": "2026-11-20"
+  },
+  "notes": [
+    "Täglich von 11:30 – 14:30 Uhr",
+    "Zum Mitnehmen: Je € 12,90 und zu jedem Gericht gibt es eine süße Überraschung!",
+    "Für die Bestellung rufen Sie einfach an: 089 / 91 62 62"
+  ],
+  "days": [
+    {
+      "date": "2026-11-16",
+      "weekday": "Montag",
+      "dishes": [
+        {
+          "category": "Tagesgericht",
+          "name": "Gegrilltes Rindfleisch in Bratensoße an Kartoffelknödel",
+          "price": null,
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Kartoffelgnocchi nach „Arrabbiata“ Art mit Burrata und Beilagensalat",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "A",
+            "D",
+            "l1",
+            "L"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "weekday": "Dienstag",
+      "dishes": [
+        {
+          "category": "Tagesgericht",
+          "name": "Burrito Schawarma mit Hähnchen, Gemüse und Guacamole",
+          "price": null,
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": [
+            "l1"
+          ]
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Kartoffelgnocchi nach „Arrabbiata“ Art mit Burrata und Beilagensalat",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "A",
+            "D",
+            "l1",
+            "L"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "weekday": "Mittwoch",
+      "dishes": [
+        {
+          "category": "Tagesgericht",
+          "name": "Naturschnitzel in grüner Pfeffersoße an Kräuterreis",
+          "price": null,
+          "tags": [
+            "fleisch"
+          ],
+          "allergens": [
+            "l1",
+            "D"
+          ]
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Kartoffelgnocchi nach „Arrabbiata“ Art mit Burrata und Beilagensalat",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "A",
+            "D",
+            "l1",
+            "L"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "weekday": "Donnerstag",
+      "dishes": [
+        {
+          "category": "Tagesgericht",
+          "name": "Hähnchen Cordon bleu mit Aioli Soße an Bratkartoffeln und Salat Bouquet",
+          "price": null,
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": [
+            "A",
+            "D",
+            "l1",
+            "L"
+          ]
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Kartoffelgnocchi nach „Arrabbiata“ Art mit Burrata und Beilagensalat",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "A",
+            "D",
+            "l1",
+            "L"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "weekday": "Freitag",
+      "dishes": [
+        {
+          "category": "Tagesgericht",
+          "name": "Backfisch mit hausgemachter Remoulade an Kartoffelgratin",
+          "price": null,
+          "tags": [
+            "fisch"
+          ],
+          "allergens": [
+            "A",
+            "B",
+            "D",
+            "l1"
+          ]
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Kartoffelgnocchi nach „Arrabbiata“ Art mit Burrata und Beilagensalat",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "A",
+            "D",
+            "l1",
+            "L"
+          ]
+        }
+      ]
+    }
+  ],
+  "weekly": [],
+  "legend": {
+    "allergens": {}
+  },
+  "restaurant": "rothof",
+  "fetchedAt": "2026-11-21T19:21:56+00:00"
+}

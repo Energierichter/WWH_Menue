@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T19:08:07+00:00",
+  "updatedAt": "2026-11-21T19:21:56+00:00",
   "restaurants": [
     {
       "id": "stmuv",
@@ -15,7 +15,7 @@
         "2026-11-23"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-21T19:08:07+00:00"
+      "checkedAt": "2026-11-21T19:21:56+00:00"
     },
     {
       "id": "foehn",
@@ -32,8 +32,25 @@
         "2026-11-16"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-21T19:08:07+00:00",
+      "checkedAt": "2026-11-21T19:21:56+00:00",
       "kind": "images"
+    },
+    {
+      "id": "rothof",
+      "name": "Rothof Restaurant",
+      "subtitle": "Internationale Küche im Grünen am Denninger Anger – Mittagstisch Mo–Fr",
+      "cuisine": "International",
+      "address": "Denninger Str. 120, 81925 München",
+      "hours": "Täglich 10:00–24:00 · Mittagstisch Mo–Fr 11:30–14:30",
+      "phone": "+49 89 916262",
+      "url": "https://rothof.de/restaurant/",
+      "color": "#c8102e",
+      "emoji": "🌳",
+      "weeks": [
+        "2026-11-16"
+      ],
+      "status": "ok",
+      "checkedAt": "2026-11-21T19:21:56+00:00"
     },
     {
       "id": "cedar-lounge",
@@ -48,7 +65,7 @@
       "emoji": "🌲",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-21T19:08:07+00:00"
+      "checkedAt": "2026-11-21T19:21:56+00:00"
     },
     {
       "id": "namaste",
@@ -64,7 +81,7 @@
       "emoji": "🍛",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-21T19:08:07+00:00"
+      "checkedAt": "2026-11-21T19:21:56+00:00"
     },
     {
       "id": "farry",
@@ -79,7 +96,7 @@
       "emoji": "🍔",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-21T19:08:07+00:00"
+      "checkedAt": "2026-11-21T19:21:56+00:00"
     },
     {
       "id": "amal",
@@ -93,7 +110,7 @@
       "emoji": "🥐",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-21T19:08:07+00:00"
+      "checkedAt": "2026-11-21T19:21:56+00:00"
     }
   ]
 }

@@ -14,8 +14,8 @@
     4: "mit Geschmacksverstärker", 5: "geschwefelt", 6: "geschwärzt", 7: "mit Phosphat",
     8: "mit Milcheiweiß", 9: "koffeinhaltig", 10: "chininhaltig", 11: "mit Süßungsmittel", 12: "gewachst",
   };
-  const TAG_LABEL = { vegan: "🌱 vegan", vegetarisch: "🥕 vegetarisch", "geflügel": "🐔 Geflügel", schwein: "🐷 Schwein", rind: "🐮 Rind", fisch: "🐟 Fisch" };
-  const MEAT = ["geflügel", "schwein", "rind"];
+  const TAG_LABEL = { vegan: "🌱 vegan", vegetarisch: "🥕 vegetarisch", "geflügel": "🐔 Geflügel", schwein: "🐷 Schwein", rind: "🐮 Rind", fisch: "🐟 Fisch", fleisch: "🍖 Fleisch" };
+  const MEAT = ["geflügel", "schwein", "rind", "fleisch"];
   const FILTERS = [
     { id: "all", label: "Alle", test: () => true },
     { id: "vegan", label: "🌱 Vegan", test: (d) => d.tags.includes("vegan") },
