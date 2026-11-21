@@ -36,6 +36,7 @@ jobs:
         run: python scraper/scrape.py
 
       - name: Neue Daten committen
+        continue-on-error: true
         run: |
           git config user.name "menu-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -44,7 +45,10 @@ jobs:
             echo "Keine Änderungen."
           else
             git commit -m "Speisepläne aktualisiert ($(date -u +%Y-%m-%d))"
-            git push
+            for i in 1 2 3; do
+              git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push && break
+              sleep 5
+            done || echo "::warning::Push fehlgeschlagen – Seite wird trotzdem veröffentlicht."
           fi
 
       - name: Seite zusammenstellen
