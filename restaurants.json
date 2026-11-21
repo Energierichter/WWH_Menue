@@ -1,0 +1,13 @@
+[
+  {
+    "id": "stmuv",
+    "name": "Casino StMUV",
+    "subtitle": "Bayerisches Staatsministerium für Umwelt und Verbraucherschutz",
+    "address": "Rosenkavalierplatz 2, 81925 München",
+    "hours": "Mo–Fr 11:00–13:30",
+    "url": "https://www.stmuv.bayern.de/speiseplan/",
+    "parser": "stmuv",
+    "color": "#2f9e9a",
+    "emoji": "🍽️"
+  }
+]

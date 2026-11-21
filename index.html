@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mittagstisch</title>
+  <meta name="description" content="Aktuelle Speisepläne ausgewählter Kantinen – schön aufbereitet.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="./">
+        <span class="brand-mark">🍽️</span>
+        <span class="brand-text">Mittagstisch</span>
+      </a>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Farbschema wechseln" title="Hell/Dunkel">🌓</button>
+    </div>
+    <div class="wrap">
+      <p class="eyebrow">Restaurant wählen</p>
+      <nav class="picker" id="picker" aria-label="Restaurant auswählen"></nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+    <section class="hero" id="hero" hidden>
+      <div>
+        <h1 id="rName"></h1>
+        <p class="sub" id="rSub"></p>
+        <ul class="meta" id="rMeta"></ul>
+      </div>
+      <div class="hero-actions">
+        <label class="select">
+          <span>Woche</span>
+          <select id="weekSelect" aria-label="Woche auswählen"></select>
+        </label>
+        <button class="btn primary" id="surprise" type="button">🎲 Was ess ich heute?</button>
+      </div>
+    </section>
+
+    <section class="toolbar" id="toolbar" hidden>
+      <div class="days" id="days" role="tablist" aria-label="Wochentag"></div>
+      <div class="filters" id="filters" aria-label="Filter"></div>
+    </section>
+
+    <section id="menu" aria-live="polite"></section>
+
+    <section id="weekly" hidden>
+      <h2 class="section-title">Wochendesserts · täglich im Angebot</h2>
+      <div class="grid" id="weeklyGrid"></div>
+    </section>
+
+    <section id="notes" hidden>
+      <h2 class="section-title">Gut zu wissen</h2>
+      <ul class="notes" id="notesList"></ul>
+    </section>
+
+    <section id="legend" hidden>
+      <details>
+        <summary>Allergene &amp; Zusatzstoffe</summary>
+        <dl class="legend" id="legendList"></dl>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <span id="updated"></span>
+    <span>Angaben ohne Gewähr · Quelle: <a id="sourceLink" href="#" target="_blank" rel="noopener">Originalseite</a></span>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,406 @@
+{
+  "week": {
+    "from": "2026-11-23",
+    "to": "2026-11-27"
+  },
+  "notes": [
+    "Für externe Gäste gilt der Einlass ab 12.15 Uhr und wir erheben einen Preisaufschlag von 15%.",
+    "Bitte beachten Sie unser Angebot an der Salat-Theke pro 100 g 1,60 €",
+    "Beilagen 1,70€; Desserts: 2,10€"
+  ],
+  "days": [
+    {
+      "date": "2026-11-23",
+      "weekday": "Montag",
+      "dishes": [
+        {
+          "category": "Suppe",
+          "name": "Blumenkohl",
+          "price": "1,30 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": [
+            "i",
+            "j"
+          ]
+        },
+        {
+          "category": "Essen I",
+          "name": "Süßkartoffelcurry / Mango / Babyspinat / Duftreis",
+          "price": "5,90 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": [
+            "i",
+            "j",
+            "k"
+          ]
+        },
+        {
+          "category": "Essen II",
+          "name": "Kötbullar / Rahmsauce / Preiselbeeren / Kartoffelpüree / Blattsalat",
+          "price": "6,90 € - 7,40 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": [
+            "a1",
+            "c",
+            "g",
+            "i",
+            "j",
+            "o"
+          ]
+        },
+        {
+          "category": "Essen III",
+          "name": "Schaschlikpfanne / Pommes Frites",
+          "price": "8,40 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": [
+            "i",
+            "j",
+            "o",
+            "2",
+            "4",
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "weekday": "Dienstag",
+      "dishes": [
+        {
+          "category": "Suppe",
+          "name": "Süßkartoffel",
+          "price": "1,30 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": [
+            "i",
+            "j",
+            "k"
+          ]
+        },
+        {
+          "category": "Essen I",
+          "name": "Gyros / Tzatziki / Pommes",
+          "price": "5,90 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": [
+            "a1",
+            "a4",
+            "f",
+            "i",
+            "j"
+          ]
+        },
+        {
+          "category": "Essen II",
+          "name": "Cevapcici von der Pute / Djuvec Reis / Ajvar / Krautsalat",
+          "price": "6,90 € - 7,40 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": [
+            "a1",
+            "c",
+            "g",
+            "i",
+            "j"
+          ]
+        },
+        {
+          "category": "Essen III",
+          "name": "Penne alla Bolognese",
+          "price": "7,90 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": [
+            "a1",
+            "c",
+            "g",
+            "i",
+            "j",
+            "o"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "weekday": "Mittwoch",
+      "dishes": [
+        {
+          "category": "Suppe",
+          "name": "Kichererbse / Sesam",
+          "price": "1,30 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": [
+            "i",
+            "j",
+            "k"
+          ]
+        },
+        {
+          "category": "Essen I",
+          "name": "Lasagne / Linse / Tomate",
+          "price": "5,90 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": [
+            "a1",
+            "i",
+            "o"
+          ]
+        },
+        {
+          "category": "Essen II",
+          "name": "Massamancurry / Huhn / Kartoffel / Erdnuss / Duftreis",
+          "price": "6,90 € - 7,40 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": [
+            "d",
+            "e",
+            "f",
+            "g",
+            "i",
+            "j",
+            "k"
+          ]
+        },
+        {
+          "category": "Essen III",
+          "name": "Omas Rinderroulade / Kartoffelpüree / Blattsalat",
+          "price": "13,00 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": [
+            "a1",
+            "g",
+            "i",
+            "j",
+            "o"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "weekday": "Donnerstag",
+      "dishes": [
+        {
+          "category": "Suppe",
+          "name": "Karotte / Vanille",
+          "price": "1,30 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": [
+            "i",
+            "j"
+          ]
+        },
+        {
+          "category": "Essen I",
+          "name": "Gemüse Biryani / Duftreis",
+          "price": "5,90 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": [
+            "h1",
+            "h4",
+            "f",
+            "i",
+            "j"
+          ]
+        },
+        {
+          "category": "Essen II",
+          "name": "Currywurst / hausgemachte Sauce / Pommes Frites",
+          "price": "6,90 € - 7,40 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": [
+            "i",
+            "j",
+            "3",
+            "7"
+          ]
+        },
+        {
+          "category": "Essen III",
+          "name": "Holzfällersteak / Bratkartoffeln / Zwiebelsauce / Blattsalat",
+          "price": "8,00 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": [
+            "a1",
+            "i",
+            "j",
+            "o"
+          ]
+        },
+        {
+          "category": "Specials",
+          "name": "Vegane Currywurst / hausgemachte Sauce / Pommes Frites",
+          "price": "7,40 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": [
+            "i",
+            "j",
+            "1",
+            "7",
+            "11"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "weekday": "Freitag",
+      "dishes": [
+        {
+          "category": "Suppe",
+          "name": "Zwiebel",
+          "price": "1,30 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": [
+            "i",
+            "j",
+            "o"
+          ]
+        },
+        {
+          "category": "Essen I",
+          "name": "Arme Ritter / Gewürzkirschen / Schlagsahne",
+          "price": "5,90 €",
+          "tags": [],
+          "allergens": [
+            "a1",
+            "c",
+            "g",
+            "h1"
+          ]
+        },
+        {
+          "category": "Essen II",
+          "name": "Antipastiknödel / abgebräunt / Mediterranes Gemüse / Babyspinat",
+          "price": "6,90 € - 7,40 €",
+          "tags": [],
+          "allergens": [
+            "a1",
+            "a2",
+            "a3",
+            "c",
+            "g",
+            "i",
+            "j",
+            "k"
+          ]
+        },
+        {
+          "category": "Essen III",
+          "name": "Gebackene Schollenfilet / Kartoffelpüree / Gurkensalat / Remouladensauce",
+          "price": null,
+          "tags": [
+            "fisch"
+          ],
+          "allergens": [
+            "a1",
+            "d",
+            "g",
+            "i",
+            "j",
+            "o"
+          ]
+        }
+      ]
+    }
+  ],
+  "weekly": [
+    {
+      "category": "Wochendessert",
+      "name": "Bayerisch Creme / Himbeere",
+      "price": "2,10 €",
+      "tags": [],
+      "allergens": [
+        "c",
+        "g"
+      ]
+    },
+    {
+      "category": "Wochendessert",
+      "name": "Brombeere / Mascarpone / Schokolade",
+      "price": "2,10 €",
+      "tags": [],
+      "allergens": [
+        "g"
+      ]
+    },
+    {
+      "category": "Wochendessert",
+      "name": "Salted Caramell Panna Cotta / Birne",
+      "price": "2,10 €",
+      "tags": [],
+      "allergens": [
+        "f",
+        "g"
+      ]
+    }
+  ],
+  "legend": {
+    "allergens": {
+      "a": "Gluten",
+      "a1": "Weizen",
+      "a2": "Roggen",
+      "a3": "Gerste",
+      "a4": "Hafer",
+      "a5": "Dinkel",
+      "b": "Krebstiere",
+      "c": "Ei",
+      "d": "Fische",
+      "e": "Erdnuss",
+      "f": "Soja",
+      "g": "Milch & Laktose",
+      "h": "Schalenfrucht",
+      "h1": "Mandel",
+      "h2": "Haselnuss",
+      "h3": "Walnuss",
+      "h4": "Cashew",
+      "h5": "Pistazie",
+      "i": "Sellerie",
+      "j": "Senf/Senfsaat",
+      "k": "Sesam",
+      "l": "Schwefeldioxid",
+      "m": "Lupin",
+      "n": "Weichtiere",
+      "o": "Kann Alkohol enthalten"
+    }
+  },
+  "restaurant": "stmuv",
+  "fetchedAt": "2026-11-21T18:51:41+00:00"
+}
