@@ -1,6 +1,6 @@
 # Mittagstisch 🍽️
 
-Statische Website (GitHub Pages), die Speisepläne von Kantinen automatisch abruft,
+Statische Website (GitHub Pages), die Speisepläne jeden Werktag um 10:00 Uhr (München) automatisch abruft,
 archiviert und schön darstellt – mit Restaurant-Picker, Tages-/Wochenansicht,
 Filtern (vegan, ohne Fleisch, ohne Schwein) und „🎲 Was ess ich heute?".
 
@@ -29,7 +29,7 @@ index.html, assets/       die Website
 ```
 
 Browser dürfen fremde Seiten nicht direkt abrufen (CORS). Deshalb läuft der Scraper
-zweimal täglich als GitHub Action, speichert die Daten als JSON im Repo, und die
+jeden Werktag um 10:00 Uhr als GitHub Action, speichert die Daten als JSON im Repo, und die
 Website liest nur diese JSON-Dateien. Jede Woche bleibt als Archiv erhalten
 (Auswahl „Woche" auf der Seite).
 

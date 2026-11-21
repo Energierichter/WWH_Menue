@@ -4,8 +4,10 @@ on:
   push:
     branches: [main]
   schedule:
-    # täglich 06:17 und 10:17 (UTC) – neue Pläne werden so zeitnah übernommen
-    - cron: "17 6,10 * * *"
+    # Mo–Fr um 10:00 Uhr Münchner Zeit. GitHub-Cron läuft in UTC, daher zwei
+    # Termine (08:00 UTC = 10:00 Sommerzeit, 09:00 UTC = 10:00 Winterzeit);
+    # der Job prüft unten, welcher davon gerade 10 Uhr in München ist.
+    - cron: "0 8,9 * * 1-5"
   workflow_dispatch:
 
 permissions:
@@ -18,10 +20,31 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  timecheck:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - id: check
+        run: |
+          hour=$(TZ=Europe/Berlin date +%H)
+          echo "Uhrzeit in München: $(TZ=Europe/Berlin date '+%a %H:%M')"
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "$hour" = "10" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Nicht 10 Uhr in München – dieser Termin wird übersprungen."
+          fi
+
   build:
+    needs: timecheck
+    if: needs.timecheck.outputs.run == 'true'
     runs-on: ubuntu-latest
     steps:
+      # immer den Stand von main verwenden, egal von welchem Branch der Lauf startet
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -46,7 +69,7 @@ jobs:
           else
             git commit -m "Speisepläne aktualisiert ($(date -u +%Y-%m-%d))"
             for i in 1 2 3; do
-              git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push && break
+              git pull --rebase -X theirs origin main && git push origin HEAD:main && break
               sleep 5
             done || echo "::warning::Push fehlgeschlagen – Seite wird trotzdem veröffentlicht."
           fi
