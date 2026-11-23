@@ -87,6 +87,9 @@ jobs:
 
   deploy:
     needs: build
+    # Direkt veröffentlichen geht nur von main aus. Läufe von einem anderen
+    # Branch speichern die Daten nach main; GitHub veröffentlicht dann selbst.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
