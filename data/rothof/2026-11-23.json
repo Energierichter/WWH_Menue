@@ -1,0 +1,164 @@
+{
+  "week": {
+    "from": "2026-11-23",
+    "to": "2026-11-29"
+  },
+  "notes": [
+    "Täglich von 11:30 – 14:30 Uhr",
+    "Zum Mitnehmen: Je € 12,90 und zu jedem Gericht gibt es eine süße Überraschung!",
+    "Für die Bestellung rufen Sie einfach an: 089 / 91 62 62"
+  ],
+  "days": [
+    {
+      "date": "2026-11-23",
+      "weekday": "Montag",
+      "dishes": [
+        {
+          "category": "Tagesgericht",
+          "name": "Fleischpflanzerl in Bratensoße an Kartoffelpüree",
+          "price": null,
+          "tags": [
+            "fleisch"
+          ],
+          "allergens": [
+            "A",
+            "D",
+            "l1",
+            "L"
+          ]
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Kichererbsen Falafel mit Pfannengemüse auf hausgemachtem Hummus",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "F"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "weekday": "Dienstag",
+      "dishes": [
+        {
+          "category": "Tagesgericht",
+          "name": "Geschmorte Hähnchenschenkel an Grillgemüse und Beilagensalat",
+          "price": null,
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": [
+            "L"
+          ]
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Kichererbsen Falafel mit Pfannengemüse auf hausgemachtem Hummus",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "F"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "weekday": "Mittwoch",
+      "dishes": [
+        {
+          "category": "Tagesgericht",
+          "name": "Naturschnitzel vom Schwein in Pilzrahmsoße an Butterspätzle",
+          "price": null,
+          "tags": [
+            "schwein"
+          ],
+          "allergens": [
+            "A",
+            "D",
+            "l1"
+          ]
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Kichererbsen Falafel mit Pfannengemüse auf hausgemachtem Hummus",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "F"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "weekday": "Donnerstag",
+      "dishes": [
+        {
+          "category": "Tagesgericht",
+          "name": "Chili con Carne mit Honigbrot und Crème Fraiche",
+          "price": null,
+          "tags": [],
+          "allergens": [
+            "D",
+            "l1"
+          ]
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Kichererbsen Falafel mit Pfannengemüse auf hausgemachtem Hummus",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "F"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "weekday": "Freitag",
+      "dishes": [
+        {
+          "category": "Tagesgericht",
+          "name": "Meeresfrüchte Risotto an Beilagensalat",
+          "price": null,
+          "tags": [],
+          "allergens": [
+            "B",
+            "C",
+            "D",
+            "L"
+          ]
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Kichererbsen Falafel mit Pfannengemüse auf hausgemachtem Hummus",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "F"
+          ]
+        }
+      ]
+    }
+  ],
+  "weekly": [],
+  "legend": {
+    "allergens": {}
+  },
+  "restaurant": "rothof",
+  "fetchedAt": "2026-11-23T09:14:33+00:00"
+}

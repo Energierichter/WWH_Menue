@@ -1,7 +1,7 @@
 {
   "week": {
-    "from": "2026-11-16",
-    "to": "2026-11-20"
+    "from": "2026-11-23",
+    "to": "2026-11-29"
   },
   "notes": [
     "Täglich von 11:30 – 14:30 Uhr",
@@ -10,161 +10,146 @@
   ],
   "days": [
     {
-      "date": "2026-11-16",
+      "date": "2026-11-23",
       "weekday": "Montag",
       "dishes": [
         {
           "category": "Tagesgericht",
-          "name": "Gegrilltes Rindfleisch in Bratensoße an Kartoffelknödel",
-          "price": null,
-          "tags": [
-            "rind"
-          ],
-          "allergens": []
-        },
-        {
-          "category": "Vegetarisch",
-          "name": "Kartoffelgnocchi nach „Arrabbiata“ Art mit Burrata und Beilagensalat",
-          "price": null,
-          "tags": [
-            "vegetarisch"
-          ],
-          "allergens": [
-            "A",
-            "D",
-            "l1",
-            "L"
-          ]
-        }
-      ]
-    },
-    {
-      "date": "2026-11-17",
-      "weekday": "Dienstag",
-      "dishes": [
-        {
-          "category": "Tagesgericht",
-          "name": "Burrito Schawarma mit Hähnchen, Gemüse und Guacamole",
-          "price": null,
-          "tags": [
-            "geflügel"
-          ],
-          "allergens": [
-            "l1"
-          ]
-        },
-        {
-          "category": "Vegetarisch",
-          "name": "Kartoffelgnocchi nach „Arrabbiata“ Art mit Burrata und Beilagensalat",
-          "price": null,
-          "tags": [
-            "vegetarisch"
-          ],
-          "allergens": [
-            "A",
-            "D",
-            "l1",
-            "L"
-          ]
-        }
-      ]
-    },
-    {
-      "date": "2026-11-18",
-      "weekday": "Mittwoch",
-      "dishes": [
-        {
-          "category": "Tagesgericht",
-          "name": "Naturschnitzel in grüner Pfeffersoße an Kräuterreis",
+          "name": "Fleischpflanzerl in Bratensoße an Kartoffelpüree",
           "price": null,
           "tags": [
             "fleisch"
           ],
           "allergens": [
-            "l1",
-            "D"
-          ]
-        },
-        {
-          "category": "Vegetarisch",
-          "name": "Kartoffelgnocchi nach „Arrabbiata“ Art mit Burrata und Beilagensalat",
-          "price": null,
-          "tags": [
-            "vegetarisch"
-          ],
-          "allergens": [
             "A",
             "D",
             "l1",
             "L"
           ]
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Kichererbsen Falafel mit Pfannengemüse auf hausgemachtem Hummus",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "F"
+          ]
         }
       ]
     },
     {
-      "date": "2026-11-19",
-      "weekday": "Donnerstag",
+      "date": "2026-11-24",
+      "weekday": "Dienstag",
       "dishes": [
         {
           "category": "Tagesgericht",
-          "name": "Hähnchen Cordon bleu mit Aioli Soße an Bratkartoffeln und Salat Bouquet",
+          "name": "Geschmorte Hähnchenschenkel an Grillgemüse und Beilagensalat",
           "price": null,
           "tags": [
             "geflügel"
           ],
           "allergens": [
-            "A",
-            "D",
-            "l1",
             "L"
           ]
         },
         {
           "category": "Vegetarisch",
-          "name": "Kartoffelgnocchi nach „Arrabbiata“ Art mit Burrata und Beilagensalat",
+          "name": "Kichererbsen Falafel mit Pfannengemüse auf hausgemachtem Hummus",
           "price": null,
           "tags": [
             "vegetarisch"
           ],
           "allergens": [
-            "A",
-            "D",
-            "l1",
-            "L"
+            "F"
           ]
         }
       ]
     },
     {
-      "date": "2026-11-20",
-      "weekday": "Freitag",
+      "date": "2026-11-25",
+      "weekday": "Mittwoch",
       "dishes": [
         {
           "category": "Tagesgericht",
-          "name": "Backfisch mit hausgemachter Remoulade an Kartoffelgratin",
+          "name": "Naturschnitzel vom Schwein in Pilzrahmsoße an Butterspätzle",
           "price": null,
           "tags": [
-            "fisch"
+            "schwein"
           ],
           "allergens": [
             "A",
-            "B",
             "D",
             "l1"
           ]
         },
         {
           "category": "Vegetarisch",
-          "name": "Kartoffelgnocchi nach „Arrabbiata“ Art mit Burrata und Beilagensalat",
+          "name": "Kichererbsen Falafel mit Pfannengemüse auf hausgemachtem Hummus",
           "price": null,
           "tags": [
             "vegetarisch"
           ],
           "allergens": [
-            "A",
+            "F"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "weekday": "Donnerstag",
+      "dishes": [
+        {
+          "category": "Tagesgericht",
+          "name": "Chili con Carne mit Honigbrot und Crème Fraiche",
+          "price": null,
+          "tags": [],
+          "allergens": [
             "D",
-            "l1",
+            "l1"
+          ]
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Kichererbsen Falafel mit Pfannengemüse auf hausgemachtem Hummus",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "F"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "weekday": "Freitag",
+      "dishes": [
+        {
+          "category": "Tagesgericht",
+          "name": "Meeresfrüchte Risotto an Beilagensalat",
+          "price": null,
+          "tags": [],
+          "allergens": [
+            "B",
+            "C",
+            "D",
             "L"
+          ]
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Kichererbsen Falafel mit Pfannengemüse auf hausgemachtem Hummus",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "F"
           ]
         }
       ]
@@ -175,5 +160,5 @@
     "allergens": {}
   },
   "restaurant": "rothof",
-  "fetchedAt": "2026-11-21T19:37:45+00:00"
+  "fetchedAt": "2026-11-23T09:14:33+00:00"
 }
