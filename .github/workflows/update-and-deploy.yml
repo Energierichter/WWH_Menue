@@ -26,10 +26,18 @@ jobs:
       run: ${{ steps.check.outputs.run }}
     steps:
       - id: check
+        env:
+          # Letzter Tag mit automatischer Aktualisierung (kurz vor Weihnachten).
+          # Zum Verlängern einfach das Datum ändern.
+          LAST_DAY: "2026-12-23"
         run: |
           hour=$(TZ=Europe/Berlin date +%H)
-          echo "Uhrzeit in München: $(TZ=Europe/Berlin date '+%a %H:%M')"
-          if [ "${{ github.event_name }}" != "schedule" ] || [ "$hour" = "10" ]; then
+          today=$(TZ=Europe/Berlin date +%F)
+          echo "Uhrzeit in München: $(TZ=Europe/Berlin date '+%a %F %H:%M')"
+          if [ "${{ github.event_name }}" = "schedule" ] && [[ "$today" > "$LAST_DAY" ]]; then
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Automatische Aktualisierung endete am $LAST_DAY – Lauf übersprungen."
+          elif [ "${{ github.event_name }}" != "schedule" ] || [ "$hour" = "10" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
