@@ -151,6 +151,9 @@ h1, h2, .brand-text { font-family: Fraunces, Georgia, serif; letter-spacing: -.0
 .empty { text-align: center; padding: 60px 16px; color: var(--muted); background: var(--surface); border: 1px dashed var(--line); border-radius: var(--radius); }
 .empty .big { font-size: 40px; }
 
+/* Static menus */
+.static-info { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; color: var(--muted); margin: 0 0 4px; }
+
 /* Profile (no online menu) */
 .profile { display: flex; gap: 20px; align-items: flex-start; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); }
 .profile-emoji { flex: 0 0 auto; font-size: 34px; width: 64px; height: 64px; display: grid; place-items: center; border-radius: 18px; background: color-mix(in srgb, var(--rc, var(--accent)) 15%, transparent); }

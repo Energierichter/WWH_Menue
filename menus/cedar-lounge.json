@@ -1,0 +1,98 @@
+{
+  "asOf": "2026-11-24",
+  "source": "Foto der Mittagskarte vor Ort",
+  "photo": "assets/menus/cedar-lounge.jpg",
+  "notes": [
+    "Mittagskarte Montag bis Freitag, 12:00–14:30 Uhr",
+    "Alle Gerichte inklusive 0,2 l Softdrink: wahlweise Tafelwasser, Cola, hausgemachte Minzlimonade oder Schorle",
+    "Extras: Glas Weißwein 0,1 l 3 €, Arabischer Kaffee 3 €, kleiner Tee 2 €"
+  ],
+  "sections": [
+    {
+      "title": "Mittagskarte",
+      "dishes": [
+        {
+          "name": "Vorspeisenteller",
+          "description": "Eine feine Auswahl libanesischer Klassiker, auch vegetarisch erhältlich",
+          "price": "13,90 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Orientalischer Salat mit Granatapfel & Ziegenkäse",
+          "description": "Frischer Salat mit Granatapfelkernen und cremigem Ziegenkäse, verfeinert mit orientalischen Aromen",
+          "price": "14,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Libanesisches Fladenbrot-Sandwich mit Pommes",
+          "description": "Wahlweise mit Hähnchen vom Drehspieß, Kufta, Rind (neu) oder Falafel (vegan) – dazu knusprige Pommes",
+          "price": "13,90 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Hähnchen- oder Rinder-Shawarma mit Hummus & Salat",
+          "description": "Hähnchen vom Drehspieß oder würziges Rindfleisch (neu), mit cremigem Hummus und frischem Salat · mit extra Fleischportion 17,90 €",
+          "price": "14,90 €",
+          "tags": [
+            "geflügel",
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Kibbeh bi Laban",
+          "description": "Libanesische Spezialität: würzige Rindfleischfüllung im Bulgur-Mantel, in cremiger Joghurtsauce mit Basmatireis",
+          "price": "15,90 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Chicken Stroganoff",
+          "description": "Zartes Hähnchengeschnetzeltes in cremiger Champignon-Sauce mit Basmatireis",
+          "price": "15,90 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Rindfleischbällchen in Joghurt-Minz-Zucchini-Sauce",
+          "description": "Hausgemachte Rindfleischbällchen in cremiger Joghurt-Sauce mit frischer Minze und Zucchini, dazu Basmatireis",
+          "price": "15,90 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Paniertes Fischfilet mit Pommes oder Salat",
+          "description": "Knusprig paniertes Fischfilet nach Hausart, goldbraun, mit Pommes oder frischem Salat",
+          "price": "16,90 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Dessert",
+      "dishes": [
+        {
+          "name": "Baklava",
+          "description": "ohne Softdrink",
+          "price": "6,50 €",
+          "tags": [],
+          "allergens": []
+        }
+      ]
+    }
+  ]
+}

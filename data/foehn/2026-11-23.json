@@ -9,8 +9,8 @@
   "weekly": [],
   "images": [
     {
-      "src": "https://images.squarespace-cdn.com/content/v1/55782cc7e4b09aee00dd1445/84ec23aa-d96a-4c63-8e7a-86a1fc3967ec/image.jpg?format=1500w",
-      "thumb": "https://images.squarespace-cdn.com/content/v1/55782cc7e4b09aee00dd1445/84ec23aa-d96a-4c63-8e7a-86a1fc3967ec/image.jpg?format=750w",
+      "src": "https://images.squarespace-cdn.com/content/v1/55782cc7e4b09aee00dd1445/f0088ab0-efc3-4877-accf-96c52b3bc5f6/image.jpg?format=1500w",
+      "thumb": "https://images.squarespace-cdn.com/content/v1/55782cc7e4b09aee00dd1445/f0088ab0-efc3-4877-accf-96c52b3bc5f6/image.jpg?format=750w",
       "section": "Tagesmenü",
       "alt": "Tagesmenü"
     },
@@ -27,6 +27,12 @@
       "alt": "Pinsa & Salat zum Mitnehmen"
     },
     {
+      "src": "https://images.squarespace-cdn.com/content/v1/55782cc7e4b09aee00dd1445/1fbb9686-2927-483e-901a-467cad4e17da/image.jpg?format=1500w",
+      "thumb": "https://images.squarespace-cdn.com/content/v1/55782cc7e4b09aee00dd1445/1fbb9686-2927-483e-901a-467cad4e17da/image.jpg?format=750w",
+      "section": "Mittagsmenü",
+      "alt": "Mittagsmenü"
+    },
+    {
       "src": "https://images.squarespace-cdn.com/content/v1/55782cc7e4b09aee00dd1445/80aea8d6-2b63-457b-b62e-37eda2841902/IMG_4293.jpeg?format=1500w",
       "thumb": "https://images.squarespace-cdn.com/content/v1/55782cc7e4b09aee00dd1445/80aea8d6-2b63-457b-b62e-37eda2841902/IMG_4293.jpeg?format=750w",
       "section": "Aktuelles",
@@ -37,5 +43,5 @@
     "allergens": {}
   },
   "restaurant": "foehn",
-  "fetchedAt": "2026-11-23T09:35:48+00:00"
+  "fetchedAt": "2026-11-24T12:59:04+00:00"
 }

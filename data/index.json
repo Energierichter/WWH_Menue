@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T09:35:48+00:00",
+  "updatedAt": "2026-11-24T12:59:04+00:00",
   "restaurants": [
     {
       "id": "stmuv",
@@ -15,7 +15,7 @@
         "2026-11-23"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-23T09:35:48+00:00"
+      "checkedAt": "2026-11-24T12:59:04+00:00"
     },
     {
       "id": "foehn",
@@ -33,7 +33,7 @@
         "2026-11-16"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-23T09:35:48+00:00",
+      "checkedAt": "2026-11-24T12:59:04+00:00",
       "kind": "images"
     },
     {
@@ -52,7 +52,7 @@
         "2026-11-16"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-23T09:35:48+00:00"
+      "checkedAt": "2026-11-24T12:59:04+00:00"
     },
     {
       "id": "cedar-lounge",
@@ -60,14 +60,14 @@
       "subtitle": "Libanesische Küche",
       "cuisine": "Libanesisch",
       "address": "Rosenkavalierplatz 12, 81925 München",
-      "hours": "Mo–Fr 12–23 · Sa 16–23 · So 12–23 · Mittagskarte 11:30–14:30",
+      "hours": "Mittagskarte Mo–Fr 12:00–14:30 · abends Mo–Fr 12–23, Sa 16–23, So 12–23",
       "url": "https://www.cedar-lounge.de/",
-      "info": "Die Mittagskarte wird nicht maschinenlesbar veröffentlicht (Website mit Bot-Schutz). Bitte auf der Website nachsehen.",
       "color": "#3d7d4a",
       "emoji": "🌲",
       "weeks": [],
-      "status": "info",
-      "checkedAt": "2026-11-23T09:35:48+00:00"
+      "status": "ok",
+      "checkedAt": "2026-11-24T12:59:04+00:00",
+      "kind": "static"
     },
     {
       "id": "namaste",
@@ -83,7 +83,7 @@
       "emoji": "🍛",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-23T09:35:48+00:00"
+      "checkedAt": "2026-11-24T12:59:04+00:00"
     },
     {
       "id": "farry",
@@ -98,21 +98,37 @@
       "emoji": "🍔",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-23T09:35:48+00:00"
+      "checkedAt": "2026-11-24T12:59:04+00:00"
     },
     {
       "id": "amal",
       "name": "AMAL Café",
-      "subtitle": "Café & Bäckerei – Frühstück und hausgemachte Desserts",
+      "subtitle": "Café – Salate, Bowls, frische Säfte, Smoothies & Gebäck",
       "cuisine": "Café",
       "address": "Rosenkavalierplatz 14, 81925 München",
       "url": "https://amal-cafe.de/amal-rosenkavalierplatz/",
-      "info": "Café ohne wechselnden Mittagstisch – Angebot siehe Website.",
       "color": "#a0703c",
       "emoji": "🥐",
       "weeks": [],
+      "status": "ok",
+      "checkedAt": "2026-11-24T12:59:04+00:00",
+      "kind": "static"
+    },
+    {
+      "id": "weihnachtsmarkt",
+      "name": "Arabellas Glühweinzauber",
+      "subtitle": "Weihnachtsmarkt am Arabellapark – Glühwein, Punsch & Streetfood",
+      "cuisine": "Weihnachtsmarkt",
+      "address": "Rosenkavalierplatz 4 (Arabellabogen), 81925 München",
+      "hours": "Täglich 12:00–20:00 · bis 23.12.2026",
+      "url": "https://www.gluehwein-festival.de/herzlich-willkommen",
+      "until": "2026-12-23",
+      "info": "Saisonaler Weihnachtsmarkt bis 23.12.2026 – keine feste Speisekarte online. Angebot direkt vor Ort an den Ständen.",
+      "color": "#b3261e",
+      "emoji": "🎄",
+      "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-23T09:35:48+00:00"
+      "checkedAt": "2026-11-24T12:59:04+00:00"
     }
   ]
 }

@@ -48,43 +48,60 @@ def main():
     for r in restaurants:
         rid = r["id"]
         out_dir = DATA / rid
-        if r.get("parser"):
-            out_dir.mkdir(parents=True, exist_ok=True)
+        parser = r.get("parser")
         status = "ok"
-        if not r.get("parser"):
-            status = "info"
-        else:
-          try:
-            html = Path(local[rid]).read_text(encoding="utf-8") if rid in local else fetch(r["url"])
-            menu = PARSERS[r["parser"]](html, r["url"], r.get("options"))
-            n = sum(len(d["dishes"]) for d in menu["days"]) + len(menu.get("images", []))
-            if n == 0:
-                raise ValueError("no menu items found")
-            menu["restaurant"] = rid
-            menu["fetchedAt"] = now
-            payload = json.dumps(menu, ensure_ascii=False, indent=2)
-            (out_dir / "latest.json").write_text(payload, encoding="utf-8")
-            (out_dir / f"{menu['week']['from']}.json").write_text(payload, encoding="utf-8")
-            print(f"[{rid}] {menu['week']['from']} – {menu['week']['to']}: {n} items")
-          except Exception as e:  # keep the previous data if a site is down
-            failures += 1
-            status = f"error: {e}"
-            print(f"[{rid}] FAILED: {e}", file=sys.stderr)
+        kind = None
 
-        weeks = sorted(
-            (p.stem for p in out_dir.glob("????-??-??.json")), reverse=True
-        )
+        if not parser:
+            status = "info"
+        elif parser == "static":
+            # feste Karte, von Hand gepflegt in menus/<id>.json (z. B. nach Foto)
+            kind = "static"
+            try:
+                menu = json.loads((ROOT / "menus" / f"{rid}.json").read_text(encoding="utf-8"))
+                menu.update({"kind": "static", "restaurant": rid})
+                out_dir.mkdir(parents=True, exist_ok=True)
+                (out_dir / "latest.json").write_text(
+                    json.dumps(menu, ensure_ascii=False, indent=2), encoding="utf-8")
+                n = sum(len(s["dishes"]) for s in menu["sections"])
+                print(f"[{rid}] feste Karte (Stand {menu.get('asOf')}): {n} items")
+            except Exception as e:
+                failures += 1
+                status = f"error: {e}"
+                print(f"[{rid}] FAILED: {e}", file=sys.stderr)
+        else:
+            out_dir.mkdir(parents=True, exist_ok=True)
+            if parser == "squarespace_images":
+                kind = "images"
+            try:
+                html = Path(local[rid]).read_text(encoding="utf-8") if rid in local else fetch(r["url"])
+                menu = PARSERS[parser](html, r["url"], r.get("options"))
+                n = sum(len(d["dishes"]) for d in menu["days"]) + len(menu.get("images", []))
+                if n == 0:
+                    raise ValueError("no menu items found")
+                menu["restaurant"] = rid
+                menu["fetchedAt"] = now
+                payload = json.dumps(menu, ensure_ascii=False, indent=2)
+                (out_dir / "latest.json").write_text(payload, encoding="utf-8")
+                (out_dir / f"{menu['week']['from']}.json").write_text(payload, encoding="utf-8")
+                print(f"[{rid}] {menu['week']['from']} – {menu['week']['to']}: {n} items")
+            except Exception as e:  # keep the previous data if a site is down
+                failures += 1
+                status = f"error: {e}"
+                print(f"[{rid}] FAILED: {e}", file=sys.stderr)
+
+        weeks = sorted((p.stem for p in out_dir.glob("????-??-??.json")), reverse=True) if parser and kind != "static" else []
         entry = {k: v for k, v in r.items() if k not in ("parser", "options")}
         entry.update({"weeks": weeks, "status": status, "checkedAt": now})
-        if r.get("parser") == "squarespace_images":
-            entry["kind"] = "images"
+        if kind:
+            entry["kind"] = kind
         index.append(entry)
 
     (DATA / "index.json").write_text(
         json.dumps({"updatedAt": now, "restaurants": index}, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
-    if failures and failures == sum(1 for r in restaurants if r.get("parser")):
+    if failures and failures == sum(1 for r in restaurants if r.get("parser") not in (None, "static")):
         sys.exit(1)
 
 

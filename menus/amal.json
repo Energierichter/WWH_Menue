@@ -1,0 +1,215 @@
+{
+  "asOf": "2026-11-24",
+  "source": "Foto der Karte vor Ort",
+  "photo": "assets/menus/amal.jpg",
+  "notes": [
+    "Dressing nach Wahl: Balsamic, French, Orange Vinaigrette, Peanut oder Mango Chilli",
+    "Alle Preise in Euro"
+  ],
+  "sections": [
+    {
+      "title": "Salads",
+      "dishes": [
+        {
+          "name": "Grilled Chicken Salad",
+          "description": "Blattsalat, Tomaten, Gurke, Mais, Bio-Ei, gegrilltes Hähnchen, Avocado · Empfehlung: hausgemachtes Balsamico-Dressing",
+          "price": "14,50 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Goat Cheese Salad",
+          "description": "Blattsalat, Tomaten, Rucola, Gurke, Rote Bete, Walnüsse, Kichererbsen, Ziegenkäse · Empfehlung: French Dressing",
+          "price": "11,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Quinoa and Sweet Potato Salad",
+          "description": "Blattsalat, Tomaten, Gurke, Quinoa, Süßkartoffel, Avocado, Kichererbsen · Empfehlung: Orange Vinaigrette",
+          "price": "10,50 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Bowls",
+      "dishes": [
+        {
+          "name": "Falafel Bowl",
+          "description": "Blattsalat, Rucola, Tomaten, Gurke, Falafel, Hummus, Quinoa, Oliven, Rotkohl · Empfehlung: Peanut Dressing",
+          "price": "13,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Garlic Shrimp Bowl",
+          "description": "Blattsalat, Tomaten, Gurke, Süßkartoffel, gegrillte Knoblauch-Garnelen, Avocado, Reis, Mais, Joghurt · Empfehlung: Mango-Chili-Dressing",
+          "price": "14,50 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Hot Honey Halloumi Bowl",
+          "description": "Rucola, Tomaten, Gurke, Honig, Halloumi, Reis, eingelegte Zwiebeln, Kichererbsen, Süßkartoffel · Empfehlung: Orange Vinaigrette",
+          "price": "12,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Salty",
+      "dishes": [
+        {
+          "name": "Butter Pretzel",
+          "description": "Butterbreze",
+          "price": "1,95 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Soft Pretzel Wedge with Meatloaf",
+          "description": "Laugenecke mit Leberkäse und Essiggurke",
+          "price": "4,90 €",
+          "tags": [
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Bagel with Avocado & Egg",
+          "description": "Getoasteter Bagel mit Avocado und Bio-Spiegelei",
+          "price": "5,20 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Focaccia with Tomato & Mozzarella",
+          "description": "Italienisches Fladenbrot mit Tomate und Mozzarella",
+          "price": "7,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Smoothie Bowls",
+      "dishes": [
+        {
+          "name": "Açaí Bowl",
+          "description": "Banane, Açaí-Püree, Erdbeeren, Blaubeeren, Datteln, Kokos",
+          "price": "11,50 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Ocean Breeze Smoothie Bowl",
+          "description": "Banane, Ananas, Mango, Zucchini, Datteln, Kokos, Minze",
+          "price": "10,50 €",
+          "tags": [],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Frisch gepresste Säfte & Smoothies",
+      "dishes": [
+        {
+          "name": "Orange Juice",
+          "description": "300 ml / 500 ml",
+          "price": "4,90 € / 6,80 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Carrot Juice",
+          "description": "300 ml / 500 ml",
+          "price": "4,90 € / 6,80 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Morning Juice",
+          "description": "Ananas, Zitrone, Ingwer, Apfel · 300 ml / 500 ml",
+          "price": "5,20 € / 7,20 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Wellness Juice",
+          "description": "Rote Bete, Apfel, Ingwer · 300 ml / 500 ml",
+          "price": "5,20 € / 7,20 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Smoothies: Berry, Tropical oder Green",
+          "description": "je 300 ml",
+          "price": "6,90 €",
+          "tags": [],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Sweets",
+      "dishes": [
+        {
+          "name": "Pistachio Croissant",
+          "description": "",
+          "price": "2,80 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Chocolate Croissant",
+          "description": "",
+          "price": "2,30 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Quark Pastry",
+          "description": "Quarkgebäck",
+          "price": "2,20 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Assorted Muffins",
+          "description": "",
+          "price": "2,30 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Assorted Cake Slices",
+          "description": "Kuchen nach Auswahl",
+          "price": "4,80 €",
+          "tags": [],
+          "allergens": []
+        }
+      ]
+    }
+  ]
+}

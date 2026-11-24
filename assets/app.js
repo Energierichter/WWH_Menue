@@ -63,10 +63,12 @@
   }
 
   // ---------- Picker ----------
-  const cardBadge = (r) => !r.weeks?.length ? "Infos & Links" : r.kind === "images" ? "Fotokarte" : "Speiseplan";
+  const cardBadge = (r) => r.kind === "static" ? "Feste Karte" : !r.weeks?.length ? "Infos & Links" : r.kind === "images" ? "Fotokarte" : "Speiseplan";
+  // saisonale Einträge (z. B. Weihnachtsmarkt) nach ihrem Enddatum ausblenden
+  const visibleRestaurants = () => state.index.restaurants.filter((r) => !r.until || r.until >= todayISO());
 
   function renderPicker() {
-    $("#picker").innerHTML = state.index.restaurants.map((r) => `
+    $("#picker").innerHTML = visibleRestaurants().map((r) => `
       <button class="r-card" type="button" data-id="${esc(r.id)}" style="--rc:${esc(r.color || "")}"
         aria-pressed="${state.restaurant && r.id === state.restaurant.id}">
         <span class="r-emoji">${esc(r.emoji || "🍽️")}</span>
@@ -78,7 +80,7 @@
   }
 
   async function selectRestaurant(id) {
-    const r = state.index.restaurants.find((x) => x.id === id) || state.index.restaurants[0];
+    const r = visibleRestaurants().find((x) => x.id === id) || visibleRestaurants()[0];
     state.restaurant = r;
     state.picked = null;
     store.set("restaurant", r.id);
@@ -97,6 +99,7 @@
     $("#sourceLink").href = r.url || "#";
 
     writeHash();
+    if (r.kind === "static") { await loadStatic(r); return; }
     const weeks = r.weeks || [];
     if (!weeks.length) { renderProfile(r); return; }
     await loadUpcoming(r);
@@ -137,6 +140,49 @@
     state.day = "all";
     $("#surprise").hidden = false;
     renderAll();
+  }
+
+  async function loadStatic(r) {
+    try {
+      const m = await getJSON(`data/${r.id}/latest.json`);
+      if (state.restaurant !== r) return;
+      state.menu = m;
+      renderStatic();
+    } catch { renderProfile(r); }
+  }
+
+  function renderStatic() {
+    const m = state.menu;
+    hideMenuChrome();
+    $("#toolbar").hidden = false;
+    $("#days").hidden = true;
+    $("#filters").innerHTML = FILTERS.map((f) =>
+      `<button class="chip" type="button" data-f="${f.id}" aria-pressed="${state.filter === f.id}">${esc(f.label)}</button>`).join("");
+    $("#filters").querySelectorAll(".chip").forEach((b) => b.addEventListener("click", () => {
+      state.filter = b.dataset.f; store.set("filter", state.filter); renderStatic();
+    }));
+    const test = filterFn();
+    const asOf = m.asOf ? fmtDate(m.asOf, { day: "numeric", month: "long", year: "numeric" }) : "";
+    const sections = m.sections.map((sec, si) => {
+      const dishes = sec.dishes.map((d, i) => [d, `s${si}#${i}`]).filter(([d]) => test(d));
+      if (!dishes.length) return "";
+      return `<section class="day-block">
+        <div class="day-head"><h2>${esc(sec.title)}</h2></div>
+        <div class="grid">${dishes.map(([d, k]) => dishCard(d, k)).join("")}</div></section>`;
+    }).join("");
+    $("#menu").innerHTML = `
+      <div class="static-info">
+        <span>📋 Feste Karte${asOf ? ` · Stand ${esc(asOf)}` : ""}${m.source ? ` · ${esc(m.source)}` : ""}</span>
+        ${m.photo ? `<button type="button" class="btn" id="showPhoto">📷 Originalfoto ansehen</button>` : ""}
+      </div>
+      ${sections || `<div class="empty"><div class="big">🍃</div><p>Keine passenden Gerichte.</p></div>`}`;
+    $("#showPhoto")?.addEventListener("click", () => {
+      $("#lightboxImg").src = m.photo; $("#lightboxImg").alt = "Originalfoto der Karte"; $("#lightboxCap").textContent = `Originalfoto · ${asOf}`;
+      $("#lightbox").showModal();
+    });
+    $("#notes").hidden = !m.notes?.length;
+    $("#notesList").innerHTML = (m.notes || []).map((n) => `<li>${esc(n)}</li>`).join("");
+    $("#updated").textContent = asOf ? `Karte Stand: ${asOf}` : "";
   }
 
   function hideMenuChrome() {
@@ -189,6 +235,7 @@
 
   function renderToolbar() {
     $("#toolbar").hidden = false;
+    $("#days").hidden = false;
     const t = todayISO();
     const tabs = [{ key: "all", wd: "Übersicht", dt: "3 Werktage" }].concat(
       state.menu.days.map((d) => ({ key: d.date, wd: d.date === t ? "Heute" : d.weekday.slice(0, 2), dt: fmtDate(d.date, { day: "2-digit", month: "2-digit" }), today: d.date === t })));
@@ -216,7 +263,7 @@
   function dishCard(d, key) {
     const parts = d.name.split(/\s*\/\s*/);
     const title = parts.shift();
-    const sides = parts.join(" · ");
+    const sides = d.description || parts.join(" · ");
     return `
       <article class="dish${state.picked === key ? " picked" : ""}" data-key="${esc(key)}">
         <div class="top"><span class="cat">${esc(d.category)}</span>${d.price ? `<span class="price">${esc(d.price)}</span>` : ""}</div>
