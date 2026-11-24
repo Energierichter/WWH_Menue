@@ -1,0 +1,103 @@
+{
+  "kind": "static",
+  "source": "losteria.net – Mittagsangebot (automatisch)",
+  "notes": [
+    "Il Pranzo: Mo–Fr bis 15 Uhr (nicht an Feiertagen). Pizza-Menü 14,95 € inkl. 0,3 l Softdrink oder Saftschorle, kleiner gemischter Salat +1,95 €. Auch zwei unterschiedlich belegte Hälften sind möglich.",
+    "Pasta oder Salat 10,95 € · für 4,95 € zusätzlich gibt es einen kleinen gemischten Salat und einen 0,3 l Softdrink oder eine Saftschorle dazu"
+  ],
+  "sections": [
+    {
+      "title": "Il Pranzo · Pizza-Menü 14,95 € inkl. Getränk",
+      "dishes": [
+        {
+          "name": "Pizza Funghi Freschi",
+          "description": "Käse, frische Champignons",
+          "price": "14,95 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Hawaii",
+          "description": "Käse, Hinterschinken, Ananas",
+          "price": "14,95 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Margherita",
+          "description": "Mozzarella, Basilikum",
+          "price": "14,95 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Prosciutto e Funghi",
+          "description": "Käse, Hinterschinken, frische Champignons",
+          "price": "14,95 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Prosciutto",
+          "description": "Käse, Hinterschinken",
+          "price": "14,95 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Rustica",
+          "description": "Mozzarella, frische Tomaten, Oliven, Zwiebeln, Oregano",
+          "price": "14,95 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Salami",
+          "description": "Käse, Salami",
+          "price": "14,95 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Vegetariana",
+          "description": "Mozzarella, gegrilltes Gemüse, frische Champignons, Rucola, Knoblauch",
+          "price": "14,95 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Pasta oder Salat · 10,95 €",
+      "dishes": [
+        {
+          "name": "Pasta oder Salat des Tages",
+          "description": "Genieße eines unserer Pastagerichte oder einen Salat. Unsere Pasta- und Salatauswahl variiert je nach Standort – unsere Servicekräfte reichen Dir vor Ort gerne die aktuelle Mittagskarte!",
+          "price": "10,95 €",
+          "tags": [],
+          "allergens": [],
+          "unknown": true
+        }
+      ]
+    }
+  ],
+  "restaurant": "losteria",
+  "fetchedAt": "2026-11-24T14:08:11+00:00",
+  "asOf": "2026-11-24"
+}

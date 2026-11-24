@@ -10,11 +10,12 @@ Restaurants without a machine-readable menu use "parser": null – they appear i
 the picker with their profile (address, hours, links) only.
 """
 
-from . import daveb_pdf, rothof, squarespace_images, stmuv
+from . import daveb_pdf, losteria, rothof, squarespace_images, stmuv
 
 PARSERS = {
     "stmuv": stmuv.parse,
     "squarespace_images": squarespace_images.parse,
     "rothof": rothof.parse,
     "daveb_pdf": daveb_pdf.parse,
+    "losteria": losteria.parse,
 }

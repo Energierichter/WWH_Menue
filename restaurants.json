@@ -162,6 +162,21 @@
     "emoji": "🍺"
   },
   {
+    "id": "losteria",
+    "name": "L'Osteria Bogenhausen",
+    "subtitle": "Pizza & Pasta – Mittagsangebot „Il Pranzo“ Mo–Fr",
+    "cuisine": "Italienisch",
+    "address": "Richard-Strauss-Straße 82 (Forum Bogenhausen), 81679 München",
+    "hours": "Mittagsangebot Mo–Fr 11:30–15:00 · abends bis ca. 23:00",
+    "url": "https://losteria.net/de/speisekarte/mittagsangebot/",
+    "parser": "losteria",
+    "options": {
+      "location": "München Richard-Strauss-Straße"
+    },
+    "color": "#c8102e",
+    "emoji": "🍕"
+  },
+  {
     "id": "weihnachtsmarkt",
     "name": "Arabellas Glühweinzauber",
     "subtitle": "Weihnachtsmarkt am Arabellapark – Glühwein, Punsch & Streetfood",

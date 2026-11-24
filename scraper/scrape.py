@@ -27,6 +27,10 @@ DATA = ROOT / "data"
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; MenuTracker/1.0)"}
 
 
+class _Done(Exception):
+    """Parser hat eine feste Karte geliefert – fertig für dieses Restaurant."""
+
+
 BINARY_PARSERS = {"daveb_pdf"}  # bekommen die Rohdaten (z. B. PDF) statt HTML-Text
 
 
@@ -88,6 +92,17 @@ def main():
                 else:
                     html = Path(local[rid]).read_text(encoding="utf-8") if rid in local else fetch(r.get("source_url") or r["url"])
                 menu = PARSERS[parser](html, r["url"], r.get("options"))
+                if menu.get("kind") == "static":
+                    # Parser liefert eine feste Karte (z. B. bundesweites Mittagsangebot)
+                    kind = "static"
+                    n = sum(len(s["dishes"]) for s in menu["sections"])
+                    if n == 0:
+                        raise ValueError("no menu items found")
+                    menu.update({"restaurant": rid, "fetchedAt": now, "asOf": now[:10]})
+                    (out_dir / "latest.json").write_text(
+                        json.dumps(menu, ensure_ascii=False, indent=2), encoding="utf-8")
+                    print(f"[{rid}] Karte von der Website: {n} items")
+                    raise _Done
                 n = sum(len(d["dishes"]) for d in menu["days"]) + len(menu.get("images", []))
                 if n == 0:
                     raise ValueError("no menu items found")
@@ -101,6 +116,8 @@ def main():
                 (out_dir / "latest.json").write_text(payload, encoding="utf-8")
                 (out_dir / f"{menu['week']['from']}.json").write_text(payload, encoding="utf-8")
                 print(f"[{rid}] {menu['week']['from']} – {menu['week']['to']}: {n} items")
+            except _Done:
+                pass
             except Exception as e:  # keep the previous data if a site is down
                 failures += 1
                 status = f"error: {e}"
