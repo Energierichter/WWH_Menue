@@ -22,9 +22,9 @@ KEYWORDS = [
     ("fisch", ["fisch", "lachs", "scholle", "forelle", "zander", "garnele", "thunfisch", "dorade", "kabeljau"]),
     ("geflügel", ["hähnchen", "hühn", "huhn", "pute", "geflügel", "chicken", "ente"]),
     ("rind", ["rind", "beef", "tafelspitz"]),
-    ("schwein", ["schwein", "speck", "schinken", "leberkäs", "spanferkel", "salami"]),
+    ("schwein", ["schwein", "speck", "schinken", "leberkäs", "leberkas", "spanferkel", "salami"]),
     ("fleisch", ["schnitzel", "braten", "gulasch", "burger", "wurst", "steak", "frikadelle",
-                 "fleischpflanzerl", "hack", "bolognese", "cordon bleu", "lamm", "kalb", "wild"]),
+                 "fleischpflanzerl", "hack", "wiener", "bolognese", "cordon bleu", "lamm", "kalb", "wild"]),
 ]
 
 

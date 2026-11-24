@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T14:17:24+00:00",
+  "updatedAt": "2026-11-24T14:55:14+00:00",
   "restaurants": [
     {
       "id": "stmuv",
@@ -15,7 +15,7 @@
         "2026-11-23"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:17:24+00:00"
+      "checkedAt": "2026-11-24T14:55:14+00:00"
     },
     {
       "id": "foehn",
@@ -33,7 +33,7 @@
         "2026-11-16"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:17:24+00:00",
+      "checkedAt": "2026-11-24T14:55:14+00:00",
       "kind": "images"
     },
     {
@@ -52,7 +52,7 @@
         "2026-11-16"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:17:24+00:00"
+      "checkedAt": "2026-11-24T14:55:14+00:00"
     },
     {
       "id": "cedar-lounge",
@@ -66,7 +66,7 @@
       "emoji": "🌲",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:17:24+00:00",
+      "checkedAt": "2026-11-24T14:55:14+00:00",
       "kind": "static"
     },
     {
@@ -83,7 +83,7 @@
       "emoji": "🍛",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T14:17:24+00:00"
+      "checkedAt": "2026-11-24T14:55:14+00:00"
     },
     {
       "id": "farry",
@@ -98,7 +98,7 @@
       "emoji": "🍔",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T14:17:24+00:00"
+      "checkedAt": "2026-11-24T14:55:14+00:00"
     },
     {
       "id": "amal",
@@ -111,7 +111,7 @@
       "emoji": "🥐",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:17:24+00:00",
+      "checkedAt": "2026-11-24T14:55:14+00:00",
       "kind": "static"
     },
     {
@@ -127,7 +127,7 @@
       "emoji": "🥖",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T14:17:24+00:00"
+      "checkedAt": "2026-11-24T14:55:14+00:00"
     },
     {
       "id": "030-kebap",
@@ -141,7 +141,7 @@
       "emoji": "🥙",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:17:24+00:00",
+      "checkedAt": "2026-11-24T14:55:14+00:00",
       "kind": "static"
     },
     {
@@ -156,7 +156,7 @@
       "emoji": "🥢",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:17:24+00:00",
+      "checkedAt": "2026-11-24T14:55:14+00:00",
       "kind": "static"
     },
     {
@@ -172,23 +172,25 @@
       "info": "Wechselndes Angebot an mehreren Stationen (Pizza, Pasta, Salat, Green Grill). Für München wird kein Speiseplan online veröffentlicht – der Wochen-PDF auf dave-b.com gehört zum Standort Berlin. Ersetzt das frühere Aramark-Restaurant.",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T14:17:24+00:00"
+      "checkedAt": "2026-11-24T14:55:14+00:00"
     },
     {
       "id": "paulaner",
       "name": "Paulaner's Wirtshaus & Biergarten",
-      "subtitle": "Bayerisches Wirtshaus im Westin Grand – Business Lunch mit wöchentlich wechselnder Karte",
+      "subtitle": "Bayerisches Wirtshaus im Westin Grand – Business Lunch mit Tagesgericht und vegetarischer Auswahl",
       "cuisine": "Bayerisch",
       "address": "Arabellastraße 6 (The Westin Grand), 81925 München",
       "hours": "Di–So ca. 10:00–01:00, Mo Ruhetag (laut Marriott, bitte prüfen)",
       "phone": "+49 89 92647701",
       "url": "https://www.marriott.com/de/hotels/mucwi-the-westin-grand-munich/dining/",
-      "info": "Business Lunch mit wöchentlich wechselnder Karte, laut Hotel-Website ca. 14,50 € pro Gericht inkl. kleinem Salat. Die aktuelle Wochenkarte ist nicht online – gerne ein Foto vom Aushang schicken, dann wird sie eingetragen.",
       "color": "#1f3a68",
       "emoji": "🍺",
-      "weeks": [],
-      "status": "info",
-      "checkedAt": "2026-11-24T14:17:24+00:00"
+      "url_template": "https://mds-assets.marriott.com/cms-platform-for-marriott/mucwi-arabellapark-dining/kw{kw}-{yy}-{n}.pdf",
+      "weeks": [
+        "2026-11-23"
+      ],
+      "status": "ok",
+      "checkedAt": "2026-11-24T14:55:14+00:00"
     },
     {
       "id": "losteria",
@@ -202,7 +204,7 @@
       "emoji": "🍕",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:17:24+00:00",
+      "checkedAt": "2026-11-24T14:55:14+00:00",
       "kind": "static"
     },
     {
@@ -217,7 +219,7 @@
       "emoji": "🍝",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:17:24+00:00",
+      "checkedAt": "2026-11-24T14:55:14+00:00",
       "kind": "static"
     },
     {
@@ -234,7 +236,7 @@
       "emoji": "🎄",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T14:17:24+00:00"
+      "checkedAt": "2026-11-24T14:55:14+00:00"
     }
   ]
 }

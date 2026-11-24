@@ -1,0 +1,297 @@
+{
+  "week": {
+    "from": "2026-11-23",
+    "to": "2026-11-27"
+  },
+  "notes": [
+    "Business Lunch: täglich ein Tagesgericht oder ein Gericht aus der vegetarischen Auswahl",
+    "Mit Beilagensalat 16,50 € · mit Beilagensalat und 0,5 l Erfrischungsgetränk 18,50 €"
+  ],
+  "days": [
+    {
+      "date": "2026-11-23",
+      "weekday": "Montag",
+      "dishes": [
+        {
+          "category": "Tagesgericht",
+          "name": "Penne in Tomatensauce",
+          "description": "Putenstreifen, Burrata",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Salat Ziege",
+          "description": "Ziegenkäse, Zupfsalate, Apfel, Granatapfel, Walnüsse, Gurke, Kirschtomaten, Preiselbeeren",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Veganes Gemüse Curry",
+          "description": "Kokosmilch, Wok Gemüse, Basmati Reis",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Käsespätzle",
+          "description": "Bergkäse, Röstzwiebel",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Spinatknödel",
+          "description": "Schnittlauchrahm, Wurzelgemüse, Champignons",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "weekday": "Dienstag",
+      "dishes": [
+        {
+          "category": "Tagesgericht",
+          "name": "Abgebräunter Leberkas",
+          "description": "Kartoffel-Radieschensalat · Spiegelei",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Salat Ziege",
+          "description": "Ziegenkäse, Zupfsalate, Apfel, Granatapfel, Walnüsse, Gurke, Kirschtomaten, Preiselbeeren",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Veganes Gemüse Curry",
+          "description": "Kokosmilch, Wok Gemüse, Basmati Reis",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Käsespätzle",
+          "description": "Bergkäse, Röstzwiebel",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Spinatknödel",
+          "description": "Schnittlauchrahm, Wurzelgemüse, Champignons",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "weekday": "Mittwoch",
+      "dishes": [
+        {
+          "category": "Tagesgericht",
+          "name": "Steaks vom Schweinerücken",
+          "description": "Grüne Bohnen · Butterspätzle",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Salat Ziege",
+          "description": "Ziegenkäse, Zupfsalate, Apfel, Granatapfel, Walnüsse, Gurke, Kirschtomaten, Preiselbeeren",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Veganes Gemüse Curry",
+          "description": "Kokosmilch, Wok Gemüse, Basmati Reis",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Käsespätzle",
+          "description": "Bergkäse, Röstzwiebel",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Spinatknödel",
+          "description": "Schnittlauchrahm, Wurzelgemüse, Champignons",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "weekday": "Donnerstag",
+      "dishes": [
+        {
+          "category": "Tagesgericht",
+          "name": "Kartoffelcremesuppe",
+          "description": "Wienern und gerösteten Malzbrot",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Salat Ziege",
+          "description": "Ziegenkäse, Zupfsalate, Apfel, Granatapfel, Walnüsse, Gurke, Kirschtomaten, Preiselbeeren",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Veganes Gemüse Curry",
+          "description": "Kokosmilch, Wok Gemüse, Basmati Reis",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Käsespätzle",
+          "description": "Bergkäse, Röstzwiebel",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Spinatknödel",
+          "description": "Schnittlauchrahm, Wurzelgemüse, Champignons",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "weekday": "Freitag",
+      "dishes": [
+        {
+          "category": "Tagesgericht",
+          "name": "Kürbis Ravioli",
+          "description": "Kürbiscremepesto",
+          "price": "16,50 € / 18,50 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Salat Ziege",
+          "description": "Ziegenkäse, Zupfsalate, Apfel, Granatapfel, Walnüsse, Gurke, Kirschtomaten, Preiselbeeren",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Veganes Gemüse Curry",
+          "description": "Kokosmilch, Wok Gemüse, Basmati Reis",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Käsespätzle",
+          "description": "Bergkäse, Röstzwiebel",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Vegetarisch",
+          "name": "Spinatknödel",
+          "description": "Schnittlauchrahm, Wurzelgemüse, Champignons",
+          "price": "16,50 € / 18,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        }
+      ]
+    }
+  ],
+  "weekly": [],
+  "legend": {
+    "allergens": {}
+  },
+  "sourceUrl": "https://mds-assets.marriott.com/cms-platform-for-marriott/mucwi-arabellapark-dining/kw48-26-1.pdf",
+  "restaurant": "paulaner",
+  "fetchedAt": "2026-11-24T14:55:14+00:00"
+}

@@ -21,7 +21,7 @@ Alle Restaurants am Rosenkavalierplatz, München:
 | 030 Kebap (Arabellastraße 19) | Feste Karte (Flyer-Foto vom 24.11.2026, `menus/030-kebap.json`) | Instagram @030.kebap |
 | Jiao Kitchen (Arabellastraße 19) | Feste Karte (Foto vom 24.11.2026, `menus/jiao-kitchen.json`) | Wolt |
 | Dave B. Taste Five (Arabellapark) | Nur Infos & Foto (der PDF-Wochenplan auf dave-b.com gilt für Berlin; Parser `daveb_pdf` bleibt für später) | – |
-| Paulaner's Wirtshaus (Arabellastraße 6, Westin Grand) | Nur Infos & Links | https://www.marriott.com/de/hotels/mucwi-the-westin-grand-munich/dining/ |
+| Paulaner's Wirtshaus (Arabellastraße 6, Westin Grand) | Business Lunch, automatisch aus dem Wochen-PDF (Link aus Kalenderwoche gebildet) | https://www.marriott.com/de/hotels/mucwi-the-westin-grand-munich/dining/ |
 | L'Osteria Bogenhausen (Richard-Strauss-Str. 82) | Mittagsangebot „Il Pranzo“, automatisch von losteria.net | https://losteria.net/de/speisekarte/mittagsangebot/ |
 | Pizza e Pasta Da Francesco (Richard-Strauss-Str. 56) | Feste Karte (nach Fotos, Stand Juli 2026, `menus/da-francesco.json`) | – |
 | Arabellas Glühweinzauber (Nr. 4) | Weihnachtsmarkt, nur Infos – wird nach dem 23.12.2026 ausgeblendet | https://www.gluehwein-festival.de/ |

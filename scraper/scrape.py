@@ -31,13 +31,48 @@ class _Done(Exception):
     """Parser hat eine feste Karte geliefert – fertig für dieses Restaurant."""
 
 
-BINARY_PARSERS = {"daveb_pdf"}  # bekommen die Rohdaten (z. B. PDF) statt HTML-Text
+BINARY_PARSERS = {"daveb_pdf", "paulaner_pdf"}  # bekommen die Rohdaten (z. B. PDF) statt HTML-Text
 
 
 def fetch_bytes(url: str) -> bytes:
     r = requests.get(url, headers=HEADERS, timeout=30)
     r.raise_for_status()
     return r.content
+
+
+def week_urls(template: str, monday):
+    """Mögliche URLs für eine Woche, z. B. Vorlage '.../kw{kw}-{yy}-{n}.pdf'."""
+    iso = monday.isocalendar()
+    seen = []
+    for kw in (str(iso.week), f"{iso.week:02d}"):
+        for n in (1, 2, 3):
+            u = template.format(kw=kw, yy=f"{iso.year % 100:02d}", n=n)
+            if u not in seen:
+                seen.append(u)
+    return seen
+
+
+def fetch_weekly(r, parser, out_dir, now):
+    """Holt und parst die Wochen-PDFs der aktuellen und der nächsten Woche."""
+    from datetime import date, timedelta
+    today = date.today()
+    monday = today - timedelta(days=today.weekday())
+    got = []
+    for start in (monday, monday + timedelta(days=7)):
+        for url in week_urls(r["url_template"], start):
+            try:
+                data = fetch_bytes(url)
+            except Exception:
+                continue
+            menu = PARSERS[parser](data, url, r.get("options"))
+            menu.update({"restaurant": r["id"], "fetchedAt": now})
+            payload = json.dumps(menu, ensure_ascii=False, indent=2)
+            (out_dir / f"{menu['week']['from']}.json").write_text(payload, encoding="utf-8")
+            if not got:
+                (out_dir / "latest.json").write_text(payload, encoding="utf-8")
+            got.append(menu["week"]["from"])
+            break
+    return got
 
 
 def fetch(url: str) -> str:
@@ -87,6 +122,13 @@ def main():
             if parser == "squarespace_images":
                 kind = "images"
             try:
+                if r.get("url_template"):
+                    # Wochen-PDF mit Kalenderwoche im Namen: aktuelle und nächste Woche versuchen
+                    got = fetch_weekly(r, parser, out_dir, now)
+                    if not got:
+                        raise ValueError("kein Wochenplan für diese oder nächste Woche gefunden")
+                    print(f"[{rid}] Wochen: {', '.join(got)}")
+                    raise _Done
                 if parser in BINARY_PARSERS:
                     html = Path(local[rid]).read_bytes() if rid in local else fetch_bytes(r.get("source_url") or r["url"])
                 else:

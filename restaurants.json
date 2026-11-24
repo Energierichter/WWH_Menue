@@ -150,16 +150,16 @@
   {
     "id": "paulaner",
     "name": "Paulaner's Wirtshaus & Biergarten",
-    "subtitle": "Bayerisches Wirtshaus im Westin Grand – Business Lunch mit wöchentlich wechselnder Karte",
+    "subtitle": "Bayerisches Wirtshaus im Westin Grand – Business Lunch mit Tagesgericht und vegetarischer Auswahl",
     "cuisine": "Bayerisch",
     "address": "Arabellastraße 6 (The Westin Grand), 81925 München",
     "hours": "Di–So ca. 10:00–01:00, Mo Ruhetag (laut Marriott, bitte prüfen)",
     "phone": "+49 89 92647701",
     "url": "https://www.marriott.com/de/hotels/mucwi-the-westin-grand-munich/dining/",
-    "parser": null,
-    "info": "Business Lunch mit wöchentlich wechselnder Karte, laut Hotel-Website ca. 14,50 € pro Gericht inkl. kleinem Salat. Die aktuelle Wochenkarte ist nicht online – gerne ein Foto vom Aushang schicken, dann wird sie eingetragen.",
+    "parser": "paulaner_pdf",
     "color": "#1f3a68",
-    "emoji": "🍺"
+    "emoji": "🍺",
+    "url_template": "https://mds-assets.marriott.com/cms-platform-for-marriott/mucwi-arabellapark-dining/kw{kw}-{yy}-{n}.pdf"
   },
   {
     "id": "losteria",
