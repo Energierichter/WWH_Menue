@@ -19,9 +19,8 @@
   const FILTERS = [
     { id: "all", label: "Alle", test: () => true },
     { id: "vegan", label: "🌱 Vegan", test: (d) => d.tags.includes("vegan") },
-    // d.unknown: Zutaten unbekannt -> nicht als fleischlos/schweinefrei anzeigen
+    // d.unknown: Zutaten unbekannt -> nicht als fleischlos anzeigen
     { id: "nomeat", label: "🥕 Ohne Fleisch", test: (d) => !d.unknown && !d.tags.some((t) => MEAT.includes(t)) },
-    { id: "nopork", label: "🚫🐷 Ohne Schwein", test: (d) => !d.unknown && !d.tags.includes("schwein") },
   ];
   const fmtDate = (iso, opts) => new Date(iso + "T12:00:00").toLocaleDateString("de-DE", opts);
   const todayISO = () => { const d = new Date(); d.setMinutes(d.getMinutes() - d.getTimezoneOffset()); return d.toISOString().slice(0, 10); };
@@ -39,6 +38,8 @@
   }
 
   const state = { index: null, restaurant: null, menu: null, day: null, filter: store.get("filter") || "all", picked: null };
+
+  if (!FILTERS.some((f) => f.id === state.filter)) state.filter = "all";
 
   // ---------- Theme ----------
   const applyTheme = (t) => { if (t) document.documentElement.dataset.theme = t; };

@@ -2,7 +2,7 @@
 
 Statische Website (GitHub Pages), die Speisepläne jeden Werktag um 10:00 Uhr (München) automatisch abruft (bis einschließlich 23.12.2026, einstellbar über `LAST_DAY` im Workflow),
 archiviert und schön darstellt – mit Restaurant-Picker, Ansicht für heute + die nächsten 2 Werktage,
-Filtern (vegan, ohne Fleisch, ohne Schwein) und „🎲 Was ess ich heute?".
+Filtern (vegan, ohne Fleisch) und „🎲 Was ess ich heute?".
 
 Aktuell enthalten:
 
