@@ -111,6 +111,18 @@
     "emoji": "🥖"
   },
   {
+    "id": "030-kebap",
+    "name": "030 Kebap",
+    "subtitle": "Berliner Döner – Döner, Dürüm, Pide, Pizza & Lahmacun (halal)",
+    "cuisine": "Döner & Türkisch",
+    "address": "Arabellastraße 19, 81925 München",
+    "hours": "Mo–Sa 10:00–21:00",
+    "url": "https://www.instagram.com/030.kebap/",
+    "parser": "static",
+    "color": "#e0b000",
+    "emoji": "🥙"
+  },
+  {
     "id": "weihnachtsmarkt",
     "name": "Arabellas Glühweinzauber",
     "subtitle": "Weihnachtsmarkt am Arabellapark – Glühwein, Punsch & Streetfood",

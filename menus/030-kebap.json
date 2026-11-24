@@ -1,0 +1,326 @@
+{
+  "asOf": "2026-11-24",
+  "source": "Foto des Flyers",
+  "photo": "assets/menus/030-kebap.jpg",
+  "notes": [
+    "Halal · Neueröffnung",
+    "Preise bei Döner-Gerichten: Hähnchen / Kalb",
+    "Extra Fleisch 2,00 € · Extra Käse 1,50 €",
+    "Öffnungszeiten: Montag–Samstag 10:00–21:00"
+  ],
+  "sections": [
+    {
+      "title": "Döner Kebab",
+      "dishes": [
+        {
+          "name": "Döner",
+          "description": "Hähnchen 8,50 € · Kalb 9,50 €",
+          "price": "8,50 € / 9,50 €",
+          "tags": [
+            "geflügel",
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Schüler Döner",
+          "description": "Hähnchen 7,00 € · Kalb 8,00 €",
+          "price": "7,00 € / 8,00 €",
+          "tags": [
+            "geflügel",
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Dürüm",
+          "description": "Hähnchen 9,50 € · Kalb 10,50 €",
+          "price": "9,50 € / 10,50 €",
+          "tags": [
+            "geflügel",
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Döner Teller",
+          "description": "mit Pommes oder Reis · Hähnchen 14,00 € · Kalb 15,00 €",
+          "price": "14,00 € / 15,00 €",
+          "tags": [
+            "geflügel",
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Döner Box",
+          "description": "mit Pommes oder Reis · Hähnchen 9,50 € · Kalb 10,50 €",
+          "price": "9,50 € / 10,50 €",
+          "tags": [
+            "geflügel",
+            "fleisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Menüs (mit Pommes & Softdrink)",
+      "dishes": [
+        {
+          "name": "Menü 1: Döner",
+          "description": "Döner + Pommes + Softdrink · Hähnchen / Kalb",
+          "price": "14,00 € / 15,00 €",
+          "tags": [
+            "geflügel",
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Menü 2: Dürüm",
+          "description": "Dürüm + Pommes + Softdrink · Hähnchen / Kalb",
+          "price": "15,00 € / 16,00 €",
+          "tags": [
+            "geflügel",
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Menü 3: Döner Box",
+          "description": "Döner Box mit Reis + Pommes + Softdrink · Hähnchen / Kalb",
+          "price": "15,00 € / 16,00 €",
+          "tags": [
+            "geflügel",
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Menü 4: Döner Teller",
+          "description": "Döner Teller mit Reis + Pommes + Softdrink · Hähnchen / Kalb",
+          "price": "17,00 € / 18,00 €",
+          "tags": [
+            "geflügel",
+            "fleisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Falafel",
+      "dishes": [
+        {
+          "name": "Falafel Sandwich",
+          "description": "",
+          "price": "8,00 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Falafel Dürüm",
+          "description": "",
+          "price": "9,00 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Falafel Box",
+          "description": "",
+          "price": "10,00 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Pizza",
+      "dishes": [
+        {
+          "name": "Pizza Margherita",
+          "description": "",
+          "price": "9,00 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Salami",
+          "description": "",
+          "price": "10,00 €",
+          "tags": [
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza 030 Speciale",
+          "description": "Hausspezialität – Belag auf der Karte nicht angegeben",
+          "price": "12,00 €",
+          "tags": [],
+          "allergens": [],
+          "unknown": true
+        },
+        {
+          "name": "Pizza Tonno",
+          "description": "",
+          "price": "12,00 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Sucuk",
+          "description": "",
+          "price": "12,00 €",
+          "tags": [
+            "fleisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Pide",
+      "dishes": [
+        {
+          "name": "Pide mit Käse",
+          "description": "",
+          "price": "10,00 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pide mit Käse und Spinat",
+          "description": "",
+          "price": "11,00 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pide mit Hackfleisch",
+          "description": "",
+          "price": "12,00 €",
+          "tags": [
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pide mit Sucuk",
+          "description": "",
+          "price": "12,00 €",
+          "tags": [
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pide 030 Speciale",
+          "description": "Hausspezialität – Belag auf der Karte nicht angegeben",
+          "price": "13,00 €",
+          "tags": [],
+          "allergens": [],
+          "unknown": true
+        }
+      ]
+    },
+    {
+      "title": "Lahmacun",
+      "dishes": [
+        {
+          "name": "Lahmacun mit Salat",
+          "description": "",
+          "price": "8,00 €",
+          "tags": [
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Lahmacun mit Dönerfleisch",
+          "description": "Hähnchen 10,00 € · Kalb 11,00 €",
+          "price": "10,00 € / 11,00 €",
+          "tags": [
+            "geflügel",
+            "fleisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Snacks",
+      "dishes": [
+        {
+          "name": "Pommes",
+          "description": "",
+          "price": "5,00 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Baklava",
+          "description": "pro Stück",
+          "price": "1,50 €",
+          "tags": [],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Getränke",
+      "dishes": [
+        {
+          "name": "Softdrink 0,33 l",
+          "description": "",
+          "price": "3,00 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Wasser 0,5 l",
+          "description": "",
+          "price": "2,50 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Spezi 0,5 l",
+          "description": "",
+          "price": "3,00 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Ayran",
+          "description": "",
+          "price": "2,50 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Uludağ 0,33 l",
+          "description": "",
+          "price": "3,00 €",
+          "tags": [],
+          "allergens": []
+        }
+      ]
+    }
+  ]
+}

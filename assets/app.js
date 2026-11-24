@@ -19,8 +19,9 @@
   const FILTERS = [
     { id: "all", label: "Alle", test: () => true },
     { id: "vegan", label: "🌱 Vegan", test: (d) => d.tags.includes("vegan") },
-    { id: "nomeat", label: "🥕 Ohne Fleisch", test: (d) => !d.tags.some((t) => MEAT.includes(t)) },
-    { id: "nopork", label: "🚫🐷 Ohne Schwein", test: (d) => !d.tags.includes("schwein") },
+    // d.unknown: Zutaten unbekannt -> nicht als fleischlos/schweinefrei anzeigen
+    { id: "nomeat", label: "🥕 Ohne Fleisch", test: (d) => !d.unknown && !d.tags.some((t) => MEAT.includes(t)) },
+    { id: "nopork", label: "🚫🐷 Ohne Schwein", test: (d) => !d.unknown && !d.tags.includes("schwein") },
   ];
   const fmtDate = (iso, opts) => new Date(iso + "T12:00:00").toLocaleDateString("de-DE", opts);
   const todayISO = () => { const d = new Date(); d.setMinutes(d.getMinutes() - d.getTimezoneOffset()); return d.toISOString().slice(0, 10); };

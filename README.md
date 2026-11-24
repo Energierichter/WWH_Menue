@@ -18,6 +18,7 @@ Alle Restaurants am Rosenkavalierplatz, München:
 | farry coffee grill bar (Nr. 15) | Nur Infos & Links | https://farry.eu/ |
 | AMAL Café (Nr. 14) | Feste Karte (Foto vom 24.11.2026, `menus/amal.json`) | https://amal-cafe.de/ |
 | Subway (Nr. 8) | Nur Infos & Links (bundesweit einheitliche Karte) | https://restaurants.subway.com/ |
+| 030 Kebap (Arabellastraße 19) | Feste Karte (Flyer-Foto vom 24.11.2026, `menus/030-kebap.json`) | Instagram @030.kebap |
 | Arabellas Glühweinzauber (Nr. 4) | Weihnachtsmarkt, nur Infos – wird nach dem 23.12.2026 ausgeblendet | https://www.gluehwein-festival.de/ |
 
 ## So funktioniert's
