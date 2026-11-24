@@ -24,6 +24,7 @@ Alle Restaurants am Rosenkavalierplatz, München:
 | Paulaner's Wirtshaus (Arabellastraße 6, Westin Grand) | Business Lunch, automatisch aus dem Wochen-PDF (Link aus Kalenderwoche gebildet) | https://www.marriott.com/de/hotels/mucwi-the-westin-grand-munich/dining/ |
 | L'Osteria Bogenhausen (Richard-Strauss-Str. 82) | Mittagsangebot „Il Pranzo“, automatisch von losteria.net | https://losteria.net/de/speisekarte/mittagsangebot/ |
 | Pizza e Pasta Da Francesco (Richard-Strauss-Str. 56) | Feste Karte (nach Fotos, Stand Juli 2026, `menus/da-francesco.json`) | – |
+| Hans im Glück (Arabellastraße 17) | Burger/Salate/Bowls automatisch von der Online-Karte (ohne Preise) | https://menu.hansimglueck-burgergrill.de/ |
 | Arabellas Glühweinzauber (Nr. 4) | Weihnachtsmarkt, nur Infos – wird nach dem 23.12.2026 ausgeblendet | https://www.gluehwein-festival.de/ |
 
 ## So funktioniert's

@@ -189,6 +189,19 @@
     "emoji": "🍝"
   },
   {
+    "id": "hans-im-glueck",
+    "name": "Hans im Glück Arabellapark",
+    "subtitle": "Burgergrill – Burger, Salate & Bowls, viele vegane und vegetarische Optionen",
+    "cuisine": "Burger",
+    "address": "Arabellastraße 17, 81925 München",
+    "hours": "Öffnungszeiten siehe Website (abends bis ca. 22:00)",
+    "phone": "+49 89 20002103",
+    "url": "https://menu.hansimglueck-burgergrill.de/",
+    "parser": "hansimglueck",
+    "color": "#5a7d2a",
+    "emoji": "🍔"
+  },
+  {
     "id": "weihnachtsmarkt",
     "name": "Arabellas Glühweinzauber",
     "subtitle": "Weihnachtsmarkt am Arabellapark – Glühwein, Punsch & Streetfood",

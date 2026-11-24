@@ -1,0 +1,476 @@
+{
+  "kind": "static",
+  "source": "Speisekarte von hansimglueck-burgergrill.de (automatisch)",
+  "notes": [
+    "Preise und aktuelle Mittagsangebote gibt es nur vor Ort – die Online-Karte enthält keine Preise.",
+    "Burger mit Pflücksalat, roten Zwiebeln, Tomaten und HANS IM GLÜCK Burgersoße; Brötchen nach Wahl (Sauerteig, Mehrkorn, Brioche oder brotlos), Bratling tauschbar."
+  ],
+  "sections": [
+    {
+      "title": "Burger vegan",
+      "dishes": [
+        {
+          "name": "Glücksgriff",
+          "description": "vegane Hähnchenalternative im Knuspermantel & vegane Mayo",
+          "price": null,
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Zeitgeist",
+          "description": "vegane Hähnchenalternative im Knuspermantel, vegane Goldscheibe & Trüffelmayo",
+          "price": null,
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Erbsenkönigin",
+          "description": "vegane Rindfleischalternative & Senf Gurken Relish",
+          "price": null,
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Kräuterraucher",
+          "description": "vegane Rindfleischalternative, Champignons, Kräutermix & Smokey Jam",
+          "price": null,
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Knusperschote",
+          "description": "pikanter Gemüsebratling, Kartoffelchips & scharfe Chilimayo",
+          "price": null,
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Wolpertinger",
+          "description": "veganer pikanter Gemüsebratling, vegane Goldscheibe & Avocadocreme",
+          "price": null,
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pestoprinz",
+          "description": "Umamibratling, Pink Hummus, Rucola & Kräuterpesto",
+          "price": null,
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Weltenbummler",
+          "description": "Falafelbratling, Jalapenos, Kräutermix & Avocadocreme",
+          "price": null,
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Burger vegetarisch",
+      "dishes": [
+        {
+          "name": "Farbenspiel",
+          "description": "vegetarischer Walnussbratling, Spiegelei, Rote Bete & Avocadocreme",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Hornträger",
+          "description": "vegetarischer Walnussbratling, Ziegenkäse & Feigensosse",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Beherzter",
+          "description": "vegetarischer Spinat-Käse-Bratling, karamellisierte Zwiebeln & Cheddarcreme",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Seelenheil",
+          "description": "Spinat-Käse-Bratling, Kräutermix & Camembert",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Ciao Bella",
+          "description": "Umamibratling, Rucola, Hartkäse, getrocknete Tomaten & Knoblauchmayo",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Falafresh",
+          "description": "Falafelbratling, Rote Bete, Minze & Sour Cream",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Burger Hähnchenbrust",
+      "dishes": [
+        {
+          "name": "Eitler Gockel",
+          "description": "Hähnchenbrust, Kartoffelrösti, Champignons & Trüffelmayo",
+          "price": null,
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Feuerwerk",
+          "description": "Kartoffelchips, Kräutermix & scharfe Chilimayo",
+          "price": null,
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Geselle",
+          "description": "Hähnchenbrust, Speck & Caesarsosse",
+          "price": null,
+          "tags": [
+            "geflügel",
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Hummusheld",
+          "description": "Pink Hummus, getrocknete Tomaten & Rucola",
+          "price": null,
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Meisterwerk",
+          "description": "Hähnchenbrust, Grillgemüse & Knoblauchmayo",
+          "price": null,
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Ziegenhirte",
+          "description": "Ziegenkäse & Preiselbeeren",
+          "price": null,
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Smash Burger",
+      "dishes": [
+        {
+          "name": "Single Smash",
+          "description": "1x Beef, 1x Burgerkäse mit kleinem Brioche",
+          "price": null,
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Double Smash",
+          "description": "2x Beef, 2x Burgerkäse",
+          "price": null,
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Triple Smash",
+          "description": "3x Beef, 3x Burgerkäse",
+          "price": null,
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Burger Rindfleisch",
+      "dishes": [
+        {
+          "name": "Klassik",
+          "description": "unser Hamburger seit 2010 - Salat, Zwiebel, Tomate, Rindfleisch & HANS IM GLÜCK Burgersosse",
+          "price": null,
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Hans im Glück",
+          "description": "Rindfleisch & Burgerkäse",
+          "price": null,
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Elsässer",
+          "description": "Rinderbratling, Camembert & Preiselbeeren",
+          "price": null,
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Avocado",
+          "description": "Rindfleisch, Burgerkäse & Avocadocreme",
+          "price": null,
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Birkenwald",
+          "description": "Champignons, Schnittlauch & Sour Cream",
+          "price": null,
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Feuriger",
+          "description": "Rindfleisch, Ziegenkäse & scharfe Chilimayo",
+          "price": null,
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Käse & Speck",
+          "description": "Rindfleisch, Burgerkäse & Speck",
+          "price": null,
+          "tags": [
+            "rind",
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Smokey Rösti",
+          "description": "Rinderbratling, Kartoffelrösti, Burgerkäse & Smokey Jam",
+          "price": null,
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Wilder Westen",
+          "description": "Rindfleisch, Burgerkäse, Zwiebelringe & Grillsosse",
+          "price": null,
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Casanova",
+          "description": "getrocknete Tomaten, Hartkäse & Kräuterpesto",
+          "price": null,
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Geissbock",
+          "description": "Rindfleisch, Ziegenkäse, Speck & Feigensoße",
+          "price": null,
+          "tags": [
+            "rind",
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Vollmundig",
+          "description": "Rindfleisch, Speck, karamellisierte Zwiebeln & Champignons",
+          "price": null,
+          "tags": [
+            "rind",
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Marktschreier",
+          "description": "Rindfleisch, Kartoffelrösti, Burgerkäse, Speck, Spiegelei & Trüffelmayo",
+          "price": null,
+          "tags": [
+            "rind",
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Hochstapler",
+          "description": "Doppelt Rindfleisch, Burgerkäse, Kartoffelchips & Cheddarcreme",
+          "price": null,
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Salate",
+      "dishes": [
+        {
+          "name": "Rohköstlich",
+          "description": "Salat & Kürbiskerndressing",
+          "price": null,
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Federvieh",
+          "description": "Salat, Hähnchenbrust, Hartkäse & Caesardressing",
+          "price": null,
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Wohltat",
+          "description": "Salat, Grillgemüse, Champignons, Trüffelmayo & Balsamicodressing",
+          "price": null,
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Toskana",
+          "description": "Salat, getrocknete Tomaten, Hartkäse, Kräuterpesto & Joghurtdressing",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Ziegenmaid",
+          "description": "Salat, Ziegenkäse, Rote Bete, Walnüsse & Kürbiskerndressing",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Vogelfrei",
+          "description": "Salat, vegane Hähnchenalternative im Knuspermantel, Avocadocreme, Grillgemüse & Balsamicodressing",
+          "price": null,
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Bowls",
+      "dishes": [
+        {
+          "name": "Bravur",
+          "description": "Hähnchenbrust, Avocadocreme, rote Zwiebeln & Caesardressing",
+          "price": null,
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Champion Bowl",
+          "description": "Champignons, karamellisierte Zwiebeln, Trüffelmayo & Kürbiskerndressing",
+          "price": null,
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Hippe",
+          "description": "Ziegenkäse, Walnüsse, Grillgemüse & Balsamicodressing",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Orientzauber",
+          "description": "Falafelecken, Minze, Pink Hummus & Joghurtdressing",
+          "price": null,
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        }
+      ]
+    }
+  ],
+  "restaurant": "hans-im-glueck",
+  "fetchedAt": "2026-11-24T15:03:58+00:00",
+  "asOf": "2026-11-24"
+}
