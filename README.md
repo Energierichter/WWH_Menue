@@ -12,6 +12,7 @@ Alle Restaurants am Rosenkavalierplatz, München:
 |---|---|---|
 | Umweltkantine – Casino StMUV (Nr. 2) | Speiseplan, automatisch ausgelesen | https://www.stmuv.bayern.de/speiseplan/ |
 | Rothof Restaurant (Denninger Str. 120) | Mittagstisch, automatisch ausgelesen | https://rothof.de/restaurant/ |
+| BayWa-Kantine (Arabellastraße 4) | Tagesplan der ganzen Woche, automatisch von GenussZeit | https://baywa.sgo.genusszeit.com/menu.html |
 | Bistro Föhn (Nr. 12) | Fotokarte, automatisch übernommen | https://bistrofoehn.de/ |
 | Cedar Lounge (Nr. 12) | Feste Mittagskarte (Foto vom 24.11.2026, `menus/cedar-lounge.json`) | https://www.cedar-lounge.de/ |
 | Namaste (Nr. 12) | Nur Infos & Links (keine eigene Website) | OpenTable |

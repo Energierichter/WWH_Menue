@@ -1,0 +1,413 @@
+{
+  "week": {
+    "from": "2026-11-23",
+    "to": "2026-11-26"
+  },
+  "notes": [
+    "Frische Salate selbst gestalten 100gr./ 1,31 €",
+    "Beilagen zur Selbstbedienung - geschmort, gedünstet oder gebraten für € 1,40 / Portion",
+    "Pudding, Creme-Dessert, Joghurt- oder Quarkspeise für € 1,90"
+  ],
+  "days": [
+    {
+      "date": "2026-11-23",
+      "weekday": "Montag",
+      "dishes": [
+        {
+          "category": "Suppentopf",
+          "name": "Tagessuppe",
+          "description": "täglich wechselnd – bitte Hinweis an der Ausgabe beachten",
+          "price": "1,39 €",
+          "tags": [],
+          "allergens": [],
+          "unknown": true
+        },
+        {
+          "category": "Genuss & Leben",
+          "name": "Mediterrane Hähnchenbrust",
+          "description": "Saftig gegarte Hähnchenbrust mit mediterranen Kräutern, serviert in einem aromatischen Sugo aus sonnengereiften Tomaten, Oliven und Knoblauch.",
+          "price": "5,80 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": [
+            "i"
+          ]
+        },
+        {
+          "category": "Genuss & Leben",
+          "name": "Kräuter-Ebly",
+          "description": "",
+          "price": "1,60 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "a"
+          ]
+        },
+        {
+          "category": "Wochenaktion",
+          "name": "Bayerische Krautroulade",
+          "description": "Herzhaft gefüllte Krautroulade mit Hackfleisch in kräftiger Speck-Zwiebel-Sauce.",
+          "price": "6,10 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": [
+            "a",
+            "j"
+          ]
+        },
+        {
+          "category": "Wochenaktion",
+          "name": "Kartoffelpüree",
+          "description": "",
+          "price": "1,60 €",
+          "tags": [],
+          "allergens": [
+            "g"
+          ],
+          "unknown": true
+        },
+        {
+          "category": "Show Cooking",
+          "name": "Pasta mit Genusszeit-Tomatensugo & Burrata",
+          "description": "Al dente gegarte Pasta in unserer eigens entwickelten, schonend gekochten GenussZeit-Tomatensugo, verfeinert mit cremiger Burrata, frischem Basilikum und bestem Olivenöl.",
+          "price": "5,20 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "g"
+          ]
+        },
+        {
+          "category": "Vegetarische / Vegane Oase",
+          "name": "Indisches Rajma Masala",
+          "description": "Ein herzhaftes, indisches Curry aus zarten Kidneybohnen, die in einer kräftigen Tomaten-Ingwer-Sauce mit Kreuzkümmel, Koriander und Garam Masala geschmort werden. Dazu duftender Basmatireis.",
+          "price": "6,00 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "weekday": "Dienstag",
+      "dishes": [
+        {
+          "category": "Suppentopf",
+          "name": "Tagessuppe",
+          "description": "täglich wechselnd – bitte Hinweis an der Ausgabe beachten",
+          "price": "1,39 €",
+          "tags": [],
+          "allergens": [],
+          "unknown": true
+        },
+        {
+          "category": "Genuss & Leben",
+          "name": "Fish & Chips",
+          "description": "Saftiges Fischfilet in knusprig ausgebackenem Bierteig, frisch zubereitet und mit hausgemachter Remoulade und einem Spritzer Zitrone serviert.",
+          "price": "6,00 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": [
+            "a",
+            "c",
+            "g",
+            "j"
+          ]
+        },
+        {
+          "category": "Genuss & Leben",
+          "name": "Pommes Frites",
+          "description": "",
+          "price": "1,60 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Wochenaktion",
+          "name": "Gbratener Schweinebraten auf Bayerisch Kraut",
+          "description": "Langsam gebratener Schweineschulterbraten, wunderbar zart und saftig, auf herzhaftem Bayerisch Kraut mit Kümmel und einer kräftigen Dunkelbiersauce.",
+          "price": "6,00 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": [
+            "i",
+            "l"
+          ]
+        },
+        {
+          "category": "Wochenaktion",
+          "name": "Semmelknödel",
+          "description": "",
+          "price": "1,60 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "a",
+            "c",
+            "g"
+          ]
+        },
+        {
+          "category": "Show Cooking",
+          "name": "Gnocchi mit Steinpilzrahm",
+          "description": "Goldbraun gebratene Kartoffel-Gnocchi, geschwenkt in einer cremigen Sauce mit aromatischen Steinpilzen, frisch geriebenem Parmesan und Petersilie.",
+          "price": "6,60 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "a",
+            "c",
+            "g",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "category": "Vegetarische / Vegane Oase",
+          "name": "Mexikanische Fajita-Bowl",
+          "description": "Buntes, kräftig geröstetes Paprikagemüse mit würzigen schwarzen Bohnen, cremiger Avocado und frischer Tomatensalsa. Dazu aromatischer Limettenreis und ein Hauch Chili.",
+          "price": "6,50 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "weekday": "Mittwoch",
+      "dishes": [
+        {
+          "category": "Suppentopf",
+          "name": "Tagessuppe",
+          "description": "täglich wechselnd – bitte Hinweis an der Ausgabe beachten",
+          "price": "1,39 €",
+          "tags": [],
+          "allergens": [],
+          "unknown": true
+        },
+        {
+          "category": "Genuss & Leben",
+          "name": "SCHNITZEL WIENER ART vom TIERWOHL HOF",
+          "description": "Frisch paniertes Schnitzel vom Freiland Schwein aus Österreich, goldbraun und knusprig ausgebacken, mit saftigem Fleisch und einer Zitronenspalte serviert.",
+          "price": "6,20 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": [
+            "a",
+            "c",
+            "g"
+          ]
+        },
+        {
+          "category": "Genuss & Leben",
+          "name": "Warmer Kartoffel-Endivien-Salat",
+          "description": "",
+          "price": "1,60 €",
+          "tags": [],
+          "allergens": [
+            "i",
+            "j"
+          ],
+          "unknown": true
+        },
+        {
+          "category": "Wochenaktion",
+          "name": "Gerösteter Wirsing auf Mango-Harissa-Chutney",
+          "description": "Im Ofen kräftig geröstete Wirsingspalten mit feinen Röstaromen, angerichtet auf fruchtig-scharfem Mango-Harissa-Chutney. Dazu warme Zitronen-Kichererbsen mit frischer Petersilie und gerösteten Mandeln.",
+          "price": "6,30 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": [
+            "h",
+            "ha"
+          ]
+        },
+        {
+          "category": "Show Cooking",
+          "name": "Putenrollbraten mit Orangen-Senf-Glasur",
+          "description": "Schonend gegarter Putenrollbraten, frisch aufgeschnitten und mit einer fruchtig-würzigen Glasur aus Orange und Senf verfeinert. Dazu ein kräftiger Thymianjus.",
+          "price": "6,30 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": [
+            "i",
+            "j",
+            "l"
+          ]
+        },
+        {
+          "category": "Show Cooking",
+          "name": "Kroketten",
+          "description": "",
+          "price": "1,60 €",
+          "tags": [],
+          "allergens": [
+            "a",
+            "c",
+            "g"
+          ],
+          "unknown": true
+        },
+        {
+          "category": "Vegetarische / Vegane Oase",
+          "name": "Indisches Aloo Baingan",
+          "description": "Indisches Gemüsegericht aus zart geschmorten Auberginen und Kartoffeln in einer würzigen Tomatensauce mit Ingwer, Kreuzkümmel und frischem Koriander. Dazu lockerer Basmatireis.",
+          "price": "5,20 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "weekday": "Donnerstag",
+      "dishes": [
+        {
+          "category": "Suppentopf",
+          "name": "Tagessuppe",
+          "description": "täglich wechselnd – bitte Hinweis an der Ausgabe beachten",
+          "price": "1,39 €",
+          "tags": [],
+          "allergens": [],
+          "unknown": true
+        },
+        {
+          "category": "Genuss & Leben",
+          "name": "Pfefferrahm Geschnetzeltes vom Hähnchen",
+          "description": "Streifen vom Österreichischen Hähnchen in einer cremigen Pfeffersauce und verfeinert mit frischen Kräutern",
+          "price": "6,20 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": [
+            "g",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "category": "Genuss & Leben",
+          "name": "Butterspätzle",
+          "description": "",
+          "price": "1,60 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "a",
+            "c",
+            "g"
+          ]
+        },
+        {
+          "category": "Wochenaktion",
+          "name": "Schupfnudeln mit Spitzkohl & Bergkäse",
+          "description": "Goldbraun gebratene Schupfnudeln mit zart geschwenktem Spitzkohl, würzigem Bergkäse und knusprigen Röstzwiebeln. Herzhaft, cremig und mit feinen Röstaromen.",
+          "price": "6,00 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "a",
+            "c",
+            "g"
+          ]
+        },
+        {
+          "category": "Show Cooking",
+          "name": "Pizza Schinken & Pizza Vegetariana",
+          "description": "Frisch gebackene Pizza mit knusprigem Boden, fruchtiger Tomatensauce und geschmolzenem Mozzarella. Wahlweise mit Kochschinken oder einer bunten Auswahl an Gemüse.",
+          "price": "6,50 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": [
+            "a",
+            "g"
+          ]
+        },
+        {
+          "category": "Vegetarische / Vegane Oase",
+          "name": "Omas Apfelstrudel mit Vanille Sauce",
+          "description": "Apfelstrudel aus gezogenem Teig gefüllt mit Apfelscheiben aus nachhaltiger Produktion. Mit Rosinen verfeinert Serviert mit Vanillesauce",
+          "price": "4,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": [
+            "a",
+            "c",
+            "g"
+          ]
+        }
+      ]
+    }
+  ],
+  "weekly": [],
+  "legend": {
+    "allergens": {
+      "a": "Glutenhaltiges Getreide",
+      "aa": "Dinkel/Khorasan-Weizen",
+      "ab": "Roggen",
+      "ac": "Gerste",
+      "ad": "Hafer",
+      "ae": "Kamut",
+      "b": "Krebstiere",
+      "c": "Eier",
+      "d": "Fisch",
+      "e": "Erdnüsse",
+      "f": "Soja",
+      "g": "Milch/Laktose",
+      "h": "Schalenfrüchte",
+      "ha": "Mandeln",
+      "hb": "Haselnüsse",
+      "hc": "Walnüsse",
+      "hd": "Kaschunüsse",
+      "he": "Pecannüsse",
+      "hf": "Paranüsse",
+      "hg": "Pistazien",
+      "hh": "Macadamianüsse",
+      "i": "Sellerie",
+      "j": "Senf",
+      "k": "Sesam",
+      "l": "Schwefeldioxid/Sulfite",
+      "m": "Lupinen",
+      "n": "Weichtiere",
+      "1": "mit Farbstoff",
+      "2": "mit Konservierungsstoff",
+      "3": "mit Nitritpökelsalz",
+      "4": "mit Antioxidationsmittel",
+      "5": "mit Geschmacksverstärker",
+      "6": "mit Phosphat",
+      "7": "mit Süßungsmittel",
+      "8": "geschwefelt",
+      "9": "gewachst",
+      "10": "geschwärzt",
+      "11": "koffeinhaltig",
+      "12": "chininhaltig",
+      "13": "mit kakaohaltiger Fettglasur"
+    }
+  },
+  "restaurant": "baywa",
+  "fetchedAt": "2026-11-24T16:07:49+00:00"
+}

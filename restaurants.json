@@ -12,6 +12,18 @@
     "emoji": "🍽️"
   },
   {
+    "id": "baywa",
+    "name": "BayWa-Kantine",
+    "subtitle": "Betriebsrestaurant im BayWa-Hochhaus (GenussZeit) – täglich wechselnder Speiseplan",
+    "cuisine": "Kantine",
+    "address": "Arabellastraße 4 (BayWa-Hochhaus), 81925 München",
+    "url": "https://baywa.sgo.genusszeit.com/menu.html",
+    "source_url": "https://baywa.sgo.genusszeit.com/menu.html?l=de",
+    "parser": "genusszeit",
+    "color": "#00843d",
+    "emoji": "🌾"
+  },
+  {
     "id": "foehn",
     "name": "Bistro Föhn",
     "subtitle": "Cucina mediterranea italiana – täglich wechselnde Karte",
