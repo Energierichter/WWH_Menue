@@ -137,15 +137,29 @@
   {
     "id": "dave-b",
     "name": "Dave B. Taste Five",
-    "subtitle": "Betriebsrestaurant & Café (Sodexo) – Weekly Specials plus Pizza, Pasta, Salat und Green Grill",
+    "subtitle": "Betriebsrestaurant & Café (Sodexo) – Pizza, Pasta, Salat und Green Grill",
     "cuisine": "Kantine",
     "address": "Arabellapark, München",
     "hours": "Mo–Fr · Café 7:00–15:00 · Essen 11:30–14:00",
-    "parser": "daveb_pdf",
+    "parser": null,
     "photo": "assets/menus/dave-b.jpg",
     "color": "#3a3a3a",
     "emoji": "🍕",
-    "url": "https://dave-b.com/pdofs.php/berlin/speisekarten/DaveB_Weekly_Specials.pdf"
+    "info": "Wechselndes Angebot an mehreren Stationen (Pizza, Pasta, Salat, Green Grill). Für München wird kein Speiseplan online veröffentlicht – der Wochen-PDF auf dave-b.com gehört zum Standort Berlin. Ersetzt das frühere Aramark-Restaurant."
+  },
+  {
+    "id": "paulaner",
+    "name": "Paulaner's Wirtshaus & Biergarten",
+    "subtitle": "Bayerisches Wirtshaus im Westin Grand – Business Lunch mit wöchentlich wechselnder Karte",
+    "cuisine": "Bayerisch",
+    "address": "Arabellastraße 6 (The Westin Grand), 81925 München",
+    "hours": "Di–So ca. 10:00–01:00, Mo Ruhetag (laut Marriott, bitte prüfen)",
+    "phone": "+49 89 92647701",
+    "url": "https://www.marriott.com/de/hotels/mucwi-the-westin-grand-munich/dining/",
+    "parser": null,
+    "info": "Business Lunch mit wöchentlich wechselnder Karte, laut Hotel-Website ca. 14,50 € pro Gericht inkl. kleinem Salat. Die aktuelle Wochenkarte ist nicht online – gerne ein Foto vom Aushang schicken, dann wird sie eingetragen.",
+    "color": "#1f3a68",
+    "emoji": "🍺"
   },
   {
     "id": "weihnachtsmarkt",
