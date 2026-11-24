@@ -16,7 +16,6 @@ Alle Restaurants am Rosenkavalierplatz, München:
 | Bistro Föhn (Nr. 12) | Fotokarte, automatisch übernommen | https://bistrofoehn.de/ |
 | Cedar Lounge (Nr. 12) | Feste Mittagskarte (Foto vom 24.11.2026, `menus/cedar-lounge.json`) | https://www.cedar-lounge.de/ |
 | Namaste (Nr. 12) | Nur Infos & Links (keine eigene Website) | OpenTable |
-| farry coffee grill bar (Nr. 15) | Nur Infos & Links | https://farry.eu/ |
 | AMAL Café (Nr. 14) | Feste Karte (Foto vom 24.11.2026, `menus/amal.json`) | https://amal-cafe.de/ |
 | Subway (Nr. 8) | Nur Infos & Links (bundesweit einheitliche Karte) | https://restaurants.subway.com/ |
 | 030 Kebap (Arabellastraße 19) | Feste Karte (Flyer-Foto vom 24.11.2026, `menus/030-kebap.json`) | Instagram @030.kebap |

@@ -86,19 +86,6 @@
     "emoji": "🍛"
   },
   {
-    "id": "farry",
-    "name": "farry coffee grill bar",
-    "subtitle": "Frühstück, Grill & internationale Küche mit Terrasse",
-    "cuisine": "International",
-    "address": "Rosenkavalierplatz 15, 81925 München",
-    "hours": "Lunch-Karte 11–15 Uhr (laut Gästebewertungen)",
-    "url": "https://farry.eu/",
-    "parser": null,
-    "info": "Kein Online-Speiseplan verfügbar (Website war zuletzt nicht erreichbar).",
-    "color": "#6a5acd",
-    "emoji": "🍔"
-  },
-  {
     "id": "amal",
     "name": "AMAL Café",
     "subtitle": "Café – Salate, Bowls, frische Säfte, Smoothies & Gebäck",
