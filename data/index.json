@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T13:22:04+00:00",
+  "updatedAt": "2026-11-24T13:22:56+00:00",
   "restaurants": [
     {
       "id": "stmuv",
@@ -15,7 +15,7 @@
         "2026-11-23"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-24T13:22:04+00:00"
+      "checkedAt": "2026-11-24T13:22:56+00:00"
     },
     {
       "id": "foehn",
@@ -33,7 +33,7 @@
         "2026-11-16"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-24T13:22:04+00:00",
+      "checkedAt": "2026-11-24T13:22:56+00:00",
       "kind": "images"
     },
     {
@@ -52,7 +52,7 @@
         "2026-11-16"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-24T13:22:04+00:00"
+      "checkedAt": "2026-11-24T13:22:56+00:00"
     },
     {
       "id": "cedar-lounge",
@@ -66,7 +66,7 @@
       "emoji": "🌲",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T13:22:04+00:00",
+      "checkedAt": "2026-11-24T13:22:56+00:00",
       "kind": "static"
     },
     {
@@ -83,7 +83,7 @@
       "emoji": "🍛",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T13:22:04+00:00"
+      "checkedAt": "2026-11-24T13:22:56+00:00"
     },
     {
       "id": "farry",
@@ -98,7 +98,7 @@
       "emoji": "🍔",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T13:22:04+00:00"
+      "checkedAt": "2026-11-24T13:22:56+00:00"
     },
     {
       "id": "amal",
@@ -111,7 +111,7 @@
       "emoji": "🥐",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T13:22:04+00:00",
+      "checkedAt": "2026-11-24T13:22:56+00:00",
       "kind": "static"
     },
     {
@@ -127,7 +127,7 @@
       "emoji": "🥖",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T13:22:04+00:00"
+      "checkedAt": "2026-11-24T13:22:56+00:00"
     },
     {
       "id": "030-kebap",
@@ -141,7 +141,22 @@
       "emoji": "🥙",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T13:22:04+00:00",
+      "checkedAt": "2026-11-24T13:22:56+00:00",
+      "kind": "static"
+    },
+    {
+      "id": "jiao-kitchen",
+      "name": "Jiao Kitchen",
+      "subtitle": "Chinesische Sichuan-Küche – Nudelsuppen, Reisgerichte, Dim Sum",
+      "cuisine": "Chinesisch",
+      "address": "Arabellastraße 19, 81925 München",
+      "hours": "Mittagsangebot Mo–Fr 11:00–15:00 · sonst ca. 11:00–22:30 (laut Verzeichnis)",
+      "url": "https://wolt.com/de/deu/munich/restaurant/jiao-kitchen",
+      "color": "#a4161a",
+      "emoji": "🥢",
+      "weeks": [],
+      "status": "ok",
+      "checkedAt": "2026-11-24T13:22:56+00:00",
       "kind": "static"
     },
     {
@@ -158,7 +173,7 @@
       "emoji": "🎄",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T13:22:04+00:00"
+      "checkedAt": "2026-11-24T13:22:56+00:00"
     }
   ]
 }

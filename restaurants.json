@@ -123,6 +123,18 @@
     "emoji": "🥙"
   },
   {
+    "id": "jiao-kitchen",
+    "name": "Jiao Kitchen",
+    "subtitle": "Chinesische Sichuan-Küche – Nudelsuppen, Reisgerichte, Dim Sum",
+    "cuisine": "Chinesisch",
+    "address": "Arabellastraße 19, 81925 München",
+    "hours": "Mittagsangebot Mo–Fr 11:00–15:00 · sonst ca. 11:00–22:30 (laut Verzeichnis)",
+    "url": "https://wolt.com/de/deu/munich/restaurant/jiao-kitchen",
+    "parser": "static",
+    "color": "#a4161a",
+    "emoji": "🥢"
+  },
+  {
     "id": "weihnachtsmarkt",
     "name": "Arabellas Glühweinzauber",
     "subtitle": "Weihnachtsmarkt am Arabellapark – Glühwein, Punsch & Streetfood",

@@ -1,0 +1,440 @@
+{
+  "asOf": "2026-11-24",
+  "source": "Foto der Karte im Schaufenster",
+  "photo": "assets/menus/jiao-kitchen.jpg",
+  "notes": [
+    "Mittagsangebot Mo–Fr 11:00–15:00 (nicht an Feiertagen): Hauptgericht + 4,80 € = Vorspeise nach Wahl + Dessert oder Kaffee",
+    "Vorspeisen fürs Mittagsangebot: Frühlingsrollen, Mungbohnen-Jelly, Gurkensalat, Dim Sum mit Garnelen, Edamame, Szechuan-Art Crispy Schweinebauch, Frittierte Erdnüsse, Japanischer Algensalat, Peking-Sauer-Scharf-Suppe",
+    "Gebratene Nudeln mit Gemüse: +3 € mit Schweinefleisch, Hähnchen oder Rindfleisch",
+    "Allergene (Nummern auf der Karte): 1 Eier, 2 Krebstiere, 3 Milch, 4 Sellerie, 5 Sesam, 6 Schwefeldioxid/Sulfite, 7 Nüsse, 8 glutenhaltiges Getreide, 9 Soja, 10 Glutamat, 11 Farbstoff, 12 Süßungsmittel"
+  ],
+  "sections": [
+    {
+      "title": "Hauptgerichte · Nudeln",
+      "dishes": [
+        {
+          "name": "Szechuan-Rindfleisch-Nudelsuppe",
+          "description": "Mit Weizen- oder Reisnudeln · 🌶️ scharf",
+          "price": "13,90 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Nudelsuppe mit gedämpftem Hähnchen",
+          "description": "",
+          "price": "12,90 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Nudelsuppe mit Sauerkraut und Schweinefleischstreifen",
+          "description": "",
+          "price": "12,90 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Gedämpftes Rindfleisch mit Nudeln",
+          "description": "Mit Weizen- oder Reisnudeln · 🌶️ scharf",
+          "price": "14,90 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Gebratene Nudeln mit Meeresfrüchten",
+          "description": "Garnelen, Tintenfisch und saisonales Gemüse",
+          "price": "16,90 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Hauptgerichte · Reis",
+      "dishes": [
+        {
+          "name": "Geschmortes Schweinefleisch mit Reis nach Sichuan-Art",
+          "description": "",
+          "price": "11,90 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Gebratener Reis mit Rindfleisch und eingelegter Chili",
+          "description": "",
+          "price": "12,90 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Hähnchen-Curry nach japanischer Art",
+          "description": "mit Reis",
+          "price": "12,90 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Süß-sauer frittiertes Hähnchen mit Reis",
+          "description": "",
+          "price": "12,90 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Gebratener Reis nach Hausart",
+          "description": "Schweineschinken-Würfel, Eier, Gemüse",
+          "price": "9,90 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Hauptgerichte · Vegetarisch",
+      "dishes": [
+        {
+          "name": "Gebratener Tofu mit verschiedenem Gemüse",
+          "description": "mit Reis oder Nudeln",
+          "price": "12,90 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pilzsuppen-Nudeln",
+          "description": "",
+          "price": "11,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Nudeln mit Tomaten und Ei",
+          "description": "",
+          "price": "11,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Nudeln mit rein pflanzlichem Mapo-Tofu",
+          "description": "",
+          "price": "12,90 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Gebratene Nudeln mit Gemüse der Saison",
+          "description": "+3 € mit Schweinefleisch, Hähnchen oder Rindfleisch",
+          "price": "9,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Vorspeisen",
+      "dishes": [
+        {
+          "name": "Fuqi Feipian",
+          "description": "Kalt: dünn geschnittenes Rindfleisch und Rinderinnereien · 🌶️ scharf",
+          "price": "8,90 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Hähnchen mit scharfer Sauce",
+          "description": "🌶️ scharf",
+          "price": "7,90 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Knusprige Garnelen",
+          "description": "",
+          "price": "10,90 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Gewürztes Rindfleisch",
+          "description": "Five-Spice Beef",
+          "price": "9,90 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Rindfleisch mit scharfer Soße",
+          "description": "🌶️ scharf",
+          "price": "9,90 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Garnelenbällchen mit schwarzem Trüffel und Reiskuchen",
+          "description": "4 Stück",
+          "price": "12,90 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Gebratene Rindfleischpastete",
+          "description": "",
+          "price": "9,90 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Szechuan-Art knuspriger Schweinebauch",
+          "description": "",
+          "price": "6,90 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Frittierte Austernpilze",
+          "description": "",
+          "price": "6,90 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Frühlingsrollen",
+          "description": "4 Stück · vegetarisch oder mit Schweinefleisch",
+          "price": "5,90 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Dim Sum gefüllt mit Garnelen",
+          "description": "4 Stück",
+          "price": "5,90 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Mungbohnen-Jelly",
+          "description": "🌶️ scharf",
+          "price": "6,90 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Frittierte Erdnüsse",
+          "description": "",
+          "price": "4,90 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Japanischer Algensalat",
+          "description": "",
+          "price": "5,90 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Edamame",
+          "description": "",
+          "price": "5,90 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Gurkensalat",
+          "description": "",
+          "price": "5,90 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Peking-Sauer-Scharf-Suppe",
+          "description": "",
+          "price": "4,80 €",
+          "tags": [],
+          "allergens": [],
+          "unknown": true
+        },
+        {
+          "name": "Garnelen-Gemüsesuppe",
+          "description": "",
+          "price": "5,80 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Desserts",
+      "dishes": [
+        {
+          "name": "Frittierter Reiskuchen mit hausgemachtem Sirup",
+          "description": "",
+          "price": "5,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Chinesischer Eispudding mit Früchten",
+          "description": "",
+          "price": "4,50 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Mango-Grapefruit-Sago in Kokosmilch",
+          "description": "",
+          "price": "6,50 €",
+          "tags": [
+            "vegan"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Sesambällchen",
+          "description": "",
+          "price": "5,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Eiscreme Vanille oder Mango",
+          "description": "1 Kugel",
+          "price": "3,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Getränke",
+      "dishes": [
+        {
+          "name": "Aqua Morelli (still/sprudelnd)",
+          "description": "0,25 l / 0,75 l",
+          "price": "2,90 € / 6,00 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Coca-Cola, Sprite, Spezi",
+          "description": "0,33 l / 0,5 l",
+          "price": "3,80 € / 4,50 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Säfte & Schorlen",
+          "description": "Apfel, Mango, Ananas, Lychee, Guave, Aloe Vera · 0,33 l / 0,5 l",
+          "price": "3,80 € / 4,50 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Augustiner Hell, Franziskaner Weißbier oder Großer Naturradler",
+          "description": "je 0,5 l",
+          "price": "4,80 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Tsingtao (chinesisches Bier) oder Lammsbräu alkoholfrei",
+          "description": "je 0,33 l",
+          "price": "3,80 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Espresso · Espresso Doppio · Cappuccino",
+          "description": "",
+          "price": "2,90 € / 3,90 € / 3,90 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Latte Macchiato",
+          "description": "",
+          "price": "4,90 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "name": "Tee",
+          "description": "Tee-Pot, Grüner Tee Bio, Jasmin Bio, frischer Zitronengras- oder Ingwer-Tee",
+          "price": "5,00 €",
+          "tags": [],
+          "allergens": []
+        }
+      ]
+    }
+  ],
+  "kind": "static",
+  "restaurant": "jiao-kitchen"
+}
