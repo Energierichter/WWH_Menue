@@ -137,15 +137,15 @@
   {
     "id": "dave-b",
     "name": "Dave B. Taste Five",
-    "subtitle": "Betriebsrestaurant & Café (Sodexo) – Pizza, Pasta, Salat und Green Grill",
+    "subtitle": "Betriebsrestaurant & Café (Sodexo) – Weekly Specials plus Pizza, Pasta, Salat und Green Grill",
     "cuisine": "Kantine",
     "address": "Arabellapark, München",
     "hours": "Mo–Fr · Café 7:00–15:00 · Essen 11:30–14:00",
-    "parser": null,
+    "parser": "daveb_pdf",
     "photo": "assets/menus/dave-b.jpg",
-    "info": "Wechselndes Angebot an mehreren Stationen (Pizza, Pasta, Salat, Green Grill) – ein Speiseplan wird nicht online veröffentlicht. Ersetzt das frühere Aramark-Restaurant.",
     "color": "#3a3a3a",
-    "emoji": "🍕"
+    "emoji": "🍕",
+    "url": "https://dave-b.com/pdofs.php/berlin/speisekarten/DaveB_Weekly_Specials.pdf"
   },
   {
     "id": "weihnachtsmarkt",

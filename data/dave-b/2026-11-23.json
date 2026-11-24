@@ -1,0 +1,238 @@
+{
+  "week": {
+    "from": "2026-11-23",
+    "to": "2026-11-27"
+  },
+  "notes": [
+    "Weekly Specials – gelten die ganze Woche, zusätzlich zu Pizza, Pasta, Salat und Green Grill",
+    "Automatisch per Texterkennung aus dem PDF gelesen – im Zweifel gilt das Original (Link „Website“)"
+  ],
+  "days": [
+    {
+      "date": "2026-11-23",
+      "weekday": "Montag",
+      "dishes": [
+        {
+          "category": "Weekly Special",
+          "name": "Sandwich mit Spinat und Feta Käse Creme",
+          "description": "Sandwich with Spinach-and Feta Cheese Cream",
+          "price": "9,50 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "category": "Weekly Special",
+          "name": "Loaded Fries „Mexican“ mit Rinderhack Kidneybohnen, Mais, Jalapeño und Käsesauce",
+          "description": "LMexican” Loaded Fries with ground beef, kidney beans, corn, jalapeno, and cheese sauce",
+          "price": "10,50 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Weekly Special",
+          "name": "Gulasch Suppe – mit Kartoffeln und Paprika",
+          "description": "Goulash Soup-with Potatoesand Bell Peppers",
+          "price": "6,90 €",
+          "tags": [
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Weekly Special",
+          "name": "Moussaka mit Rindfleisch, Aubergine und Kartoffeln",
+          "description": "Moussaka with beef, aubergine and potatoes",
+          "price": "10,90 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "weekday": "Dienstag",
+      "dishes": [
+        {
+          "category": "Weekly Special",
+          "name": "Sandwich mit Spinat und Feta Käse Creme",
+          "description": "Sandwich with Spinach-and Feta Cheese Cream",
+          "price": "9,50 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "category": "Weekly Special",
+          "name": "Loaded Fries „Mexican“ mit Rinderhack Kidneybohnen, Mais, Jalapeño und Käsesauce",
+          "description": "LMexican” Loaded Fries with ground beef, kidney beans, corn, jalapeno, and cheese sauce",
+          "price": "10,50 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Weekly Special",
+          "name": "Gulasch Suppe – mit Kartoffeln und Paprika",
+          "description": "Goulash Soup-with Potatoesand Bell Peppers",
+          "price": "6,90 €",
+          "tags": [
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Weekly Special",
+          "name": "Moussaka mit Rindfleisch, Aubergine und Kartoffeln",
+          "description": "Moussaka with beef, aubergine and potatoes",
+          "price": "10,90 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "weekday": "Mittwoch",
+      "dishes": [
+        {
+          "category": "Weekly Special",
+          "name": "Sandwich mit Spinat und Feta Käse Creme",
+          "description": "Sandwich with Spinach-and Feta Cheese Cream",
+          "price": "9,50 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "category": "Weekly Special",
+          "name": "Loaded Fries „Mexican“ mit Rinderhack Kidneybohnen, Mais, Jalapeño und Käsesauce",
+          "description": "LMexican” Loaded Fries with ground beef, kidney beans, corn, jalapeno, and cheese sauce",
+          "price": "10,50 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Weekly Special",
+          "name": "Gulasch Suppe – mit Kartoffeln und Paprika",
+          "description": "Goulash Soup-with Potatoesand Bell Peppers",
+          "price": "6,90 €",
+          "tags": [
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Weekly Special",
+          "name": "Moussaka mit Rindfleisch, Aubergine und Kartoffeln",
+          "description": "Moussaka with beef, aubergine and potatoes",
+          "price": "10,90 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "weekday": "Donnerstag",
+      "dishes": [
+        {
+          "category": "Weekly Special",
+          "name": "Sandwich mit Spinat und Feta Käse Creme",
+          "description": "Sandwich with Spinach-and Feta Cheese Cream",
+          "price": "9,50 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "category": "Weekly Special",
+          "name": "Loaded Fries „Mexican“ mit Rinderhack Kidneybohnen, Mais, Jalapeño und Käsesauce",
+          "description": "LMexican” Loaded Fries with ground beef, kidney beans, corn, jalapeno, and cheese sauce",
+          "price": "10,50 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Weekly Special",
+          "name": "Gulasch Suppe – mit Kartoffeln und Paprika",
+          "description": "Goulash Soup-with Potatoesand Bell Peppers",
+          "price": "6,90 €",
+          "tags": [
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Weekly Special",
+          "name": "Moussaka mit Rindfleisch, Aubergine und Kartoffeln",
+          "description": "Moussaka with beef, aubergine and potatoes",
+          "price": "10,90 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "weekday": "Freitag",
+      "dishes": [
+        {
+          "category": "Weekly Special",
+          "name": "Sandwich mit Spinat und Feta Käse Creme",
+          "description": "Sandwich with Spinach-and Feta Cheese Cream",
+          "price": "9,50 €",
+          "tags": [],
+          "allergens": []
+        },
+        {
+          "category": "Weekly Special",
+          "name": "Loaded Fries „Mexican“ mit Rinderhack Kidneybohnen, Mais, Jalapeño und Käsesauce",
+          "description": "LMexican” Loaded Fries with ground beef, kidney beans, corn, jalapeno, and cheese sauce",
+          "price": "10,50 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Weekly Special",
+          "name": "Gulasch Suppe – mit Kartoffeln und Paprika",
+          "description": "Goulash Soup-with Potatoesand Bell Peppers",
+          "price": "6,90 €",
+          "tags": [
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "category": "Weekly Special",
+          "name": "Moussaka mit Rindfleisch, Aubergine und Kartoffeln",
+          "description": "Moussaka with beef, aubergine and potatoes",
+          "price": "10,90 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        }
+      ]
+    }
+  ],
+  "weekly": [],
+  "legend": {
+    "allergens": {}
+  },
+  "restaurant": "dave-b",
+  "fetchedAt": "2026-11-24T13:47:45+00:00"
+}

@@ -27,6 +27,15 @@ DATA = ROOT / "data"
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; MenuTracker/1.0)"}
 
 
+BINARY_PARSERS = {"daveb_pdf"}  # bekommen die Rohdaten (z. B. PDF) statt HTML-Text
+
+
+def fetch_bytes(url: str) -> bytes:
+    r = requests.get(url, headers=HEADERS, timeout=30)
+    r.raise_for_status()
+    return r.content
+
+
 def fetch(url: str) -> str:
     r = requests.get(url, headers=HEADERS, timeout=30)
     r.raise_for_status()
@@ -74,7 +83,10 @@ def main():
             if parser == "squarespace_images":
                 kind = "images"
             try:
-                html = Path(local[rid]).read_text(encoding="utf-8") if rid in local else fetch(r["url"])
+                if parser in BINARY_PARSERS:
+                    html = Path(local[rid]).read_bytes() if rid in local else fetch_bytes(r.get("source_url") or r["url"])
+                else:
+                    html = Path(local[rid]).read_text(encoding="utf-8") if rid in local else fetch(r.get("source_url") or r["url"])
                 menu = PARSERS[parser](html, r["url"], r.get("options"))
                 n = sum(len(d["dishes"]) for d in menu["days"]) + len(menu.get("images", []))
                 if n == 0:

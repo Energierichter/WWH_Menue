@@ -61,7 +61,11 @@ jobs:
           cache-dependency-path: scraper/requirements.txt
 
       - name: Abhängigkeiten installieren
-        run: pip install -r scraper/requirements.txt
+        run: |
+          # Texterkennung für das Dave-B.-PDF (enthält nur ein Bild)
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils tesseract-ocr tesseract-ocr-deu
+          pip install -r scraper/requirements.txt
 
       - name: Speisepläne abrufen
         run: python scraper/scrape.py
