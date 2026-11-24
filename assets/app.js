@@ -163,7 +163,7 @@
       state.filter = b.dataset.f; store.set("filter", state.filter); renderStatic();
     }));
     const test = filterFn();
-    const asOf = m.asOf ? fmtDate(m.asOf, { day: "numeric", month: "long", year: "numeric" }) : "";
+    const asOf = m.asOfText || (m.asOf ? fmtDate(m.asOf, { day: "numeric", month: "long", year: "numeric" }) : "");
     const sections = m.sections.map((sec, si) => {
       const dishes = sec.dishes.map((d, i) => [d, `s${si}#${i}`]).filter(([d]) => test(d));
       if (!dishes.length) return "";

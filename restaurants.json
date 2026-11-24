@@ -177,6 +177,18 @@
     "emoji": "🍕"
   },
   {
+    "id": "da-francesco",
+    "name": "Pizza e Pasta Da Francesco",
+    "subtitle": "Italienisch – Steinofenpizza, Pasta & Salate",
+    "cuisine": "Italienisch",
+    "address": "Richard-Strauss-Straße 56, 81677 München",
+    "hours": "Öffnungszeiten siehe Google Maps (abends bis ca. 22:00)",
+    "phone": "+49 89 99931015",
+    "parser": "static",
+    "color": "#2e7d32",
+    "emoji": "🍝"
+  },
+  {
     "id": "weihnachtsmarkt",
     "name": "Arabellas Glühweinzauber",
     "subtitle": "Weihnachtsmarkt am Arabellapark – Glühwein, Punsch & Streetfood",

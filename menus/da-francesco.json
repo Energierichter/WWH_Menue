@@ -1,0 +1,484 @@
+{
+  "asOf": "2026-07-01",
+  "asOfText": "Juli 2026",
+  "source": "Fotos der Speisekarte (Google Maps)",
+  "notes": [
+    "Alle Pizzen aus dem Steinofen",
+    "Allergene und Zusatzstoffe sind auf der Karte vor Ort angegeben",
+    "Scampi con Salmone alla Griglia nur abends; Carpaccio di Manzo nur auf Bestellung"
+  ],
+  "sections": [
+    {
+      "title": "Antipasti",
+      "dishes": [
+        {
+          "name": "Burrata con Pomodori e Pesto",
+          "description": "Burrata auf Tomate und Pesto",
+          "price": "16,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Burrata con Prosciutto Crudo",
+          "description": "Burrata mit Parmaschinken auf Rucola",
+          "price": "18,90 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Carpaccio di Manzo",
+          "description": "Rindercarpaccio auf Rucola und Parmesan · nur auf Bestellung",
+          "price": "19,90 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Insalata",
+      "dishes": [
+        {
+          "name": "Insalata Mista",
+          "description": "Gemischter Salat, Schafskäse",
+          "price": "7,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Insalata Pomodoro",
+          "description": "Tomatensalat mit Zwiebeln",
+          "price": "7,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Insalata da Francesco",
+          "description": "Großer Salat mit gebratenem Gemüse, Thunfisch, Ei, schwarzen Oliven und Zwiebeln",
+          "price": "17,90 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Insalata di Pollo",
+          "description": "Großer Salat mit gebratener Hähnchenbrust und gebratenem Gemüse",
+          "price": "19,90 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Insalata Scampi",
+          "description": "Großer Salat mit Scampi und gebratenem Gemüse",
+          "price": "22,90 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Steinofenpizza",
+      "dishes": [
+        {
+          "name": "Pizza Margherita",
+          "description": "Tomatensauce und Mozzarella",
+          "price": "12,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Vegetaria",
+          "description": "Tomatensauce, Käse und Saisongemüse",
+          "price": "15,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza 4 Formaggi",
+          "description": "Tomatensauce und vier verschiedene Käsesorten",
+          "price": "15,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Funghi",
+          "description": "Tomatensauce, Käse und Champignons",
+          "price": "14,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Prosciutto",
+          "description": "Tomatensauce, Käse und Schinken",
+          "price": "13,90 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Funghi e Prosciutto",
+          "description": "Tomatensauce, Käse, Champignons und Schinken",
+          "price": "15,90 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza 4 Stagioni",
+          "description": "Tomatensauce, Käse, Paprika, Artischocken, Schinken, Pilze und Oliven",
+          "price": "15,90 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Salame",
+          "description": "Tomatensauce, Käse und Salami",
+          "price": "14,50 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Spinaci e Gorgonzola",
+          "description": "Tomatensauce, Käse, Spinat und Gorgonzola",
+          "price": "16,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Spinaci, Gorgonzola e Uova",
+          "description": "Tomatensauce, Käse, Spinat, Gorgonzola und Ei",
+          "price": "16,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Hawaii",
+          "description": "Tomatensauce, Käse, Schinken und Ananas",
+          "price": "14,90 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Capri I",
+          "description": "Tomatensauce, Käse, Schinken, Paprika und Salami",
+          "price": "15,50 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Capri II",
+          "description": "Tomatensauce, Käse, Schinken, Paprika, Thunfisch und Zwiebeln",
+          "price": "15,90 €",
+          "tags": [
+            "schwein",
+            "fisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Burrata",
+          "description": "Tomatensauce, Knoblauch, Oregano, Burrata und Rucola",
+          "price": "17,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Burrata Speciale",
+          "description": "Tomatensauce, Burrata, Parmaschinken, Balsamico-Creme und Rucola",
+          "price": "18,90 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Mamma Mia",
+          "description": "Stracciatella di Burrata, frische Kirschtomaten, Pesto und Parmesan",
+          "price": "17,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Pizza Bianca",
+      "dishes": [
+        {
+          "name": "Pizza Bianca I",
+          "description": "Käse, frische Kirschtomaten, Rucola und Parmesan",
+          "price": "14,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pizza Bianca II",
+          "description": "Käse, Spinat, Champignons, Zwiebeln und Rucola",
+          "price": "15,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Pasta",
+      "dishes": [
+        {
+          "name": "Spaghetti al Pomodoro",
+          "description": "mit Tomaten-Sahnesoße",
+          "price": "13,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Spaghetti Aglio e Olio",
+          "description": "mit Knoblauch und Olivenöl",
+          "price": "14,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Spaghetti all'Amatriciana",
+          "description": "mit Speck und Tomaten-Sahnesoße",
+          "price": "15,90 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Spaghetti Bolognese",
+          "description": "mit hausgemachter Tomaten-Rinderhackfleischsoße",
+          "price": "15,50 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Spaghetti alla Carbonara",
+          "description": "mit Speck und Eiern",
+          "price": "15,90 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Spaghetti ai 4 Formaggi",
+          "description": "mit Vier-Käse-Soße",
+          "price": "14,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Spaghetti con le Cozze",
+          "description": "mit frischen Muscheln",
+          "price": "18,50 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Spaghetti alla Puttanesca",
+          "description": "mit Sardellen, frischen Tomaten, Kapern, Oliven und Chilischoten · 🌶️ scharf",
+          "price": "17,90 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Penne all'Arrabbiata",
+          "description": "mit scharfer Tomatensoße, Knoblauch und roten Chilischoten · 🌶️ scharf",
+          "price": "14,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Penne al Salmone Fresco",
+          "description": "mit frischem Lachs in Tomaten-Sahnesoße",
+          "price": "16,90 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Penne Prosciutto Cotto e Panna",
+          "description": "mit Schinken in Tomaten-Sahnesoße",
+          "price": "14,90 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Penne con le Melanzane",
+          "description": "mit Aubergine in Sahnesoße oder Tomaten-Sahnesoße",
+          "price": "14,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Penne con Funghi e Broccoli",
+          "description": "mit Pilzen und Brokkoli in Tomaten-Sahnesoße",
+          "price": "15,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Penne con Petto di Pollo e Verdure",
+          "description": "mit Hähnchenbrust und gemischtem Gemüse in Tomaten-Sahnesoße",
+          "price": "15,90 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Paccheri della Nonna",
+          "description": "mit Spinat, Schafskäse und frischen Tomaten in Sahnesoße",
+          "price": "16,50 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Paccheri del Nonno",
+          "description": "mit Schinken, Speck und Erbsen in Sahnesoße",
+          "price": "16,90 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Gnocchi con Spinaci Freschi e Panna",
+          "description": "mit frischem Blattspinat in Sahnesoße",
+          "price": "15,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Tortellini al Prosciutto",
+          "description": "mit Schinken in Tomaten-Sahnesoße",
+          "price": "15,50 €",
+          "tags": [
+            "schwein"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Linguine con Funghi e Broccoli",
+          "description": "Dünne Bandnudeln mit Pilzen und Brokkoli in Tomaten-Sahnesoße",
+          "price": "16,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Linguine della Casa",
+          "description": "Dünne Bandnudeln mit Meeresfrüchten und Knoblauch in Tomaten-Sahnesoße",
+          "price": "17,90 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Scampi",
+      "dishes": [
+        {
+          "name": "Scampi con Spaghetti",
+          "description": "mit Tomatensoße",
+          "price": "24,90 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Scampi con Linguine al Pesto",
+          "description": "Dünne Bandnudeln mit Pesto",
+          "price": "25,90 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Scampi con Salmone alla Griglia e Verdure",
+          "description": "mit gegrilltem Lachsfilet und verschiedenem Gemüse · nur abends",
+          "price": "28,50 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": []
+        }
+      ]
+    }
+  ]
+}
