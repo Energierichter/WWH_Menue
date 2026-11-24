@@ -74,14 +74,13 @@
   {
     "id": "namaste",
     "name": "Namaste",
-    "subtitle": "Indisches Restaurant",
+    "subtitle": "Indisches Restaurant – günstiges Mittagsmenü mit Suppe oder Salat und Basmati-Reis",
     "cuisine": "Indisch",
     "address": "Rosenkavalierplatz 12, 81925 München",
-    "hours": "Mittag täglich 11:30–15:00 (laut OpenTable)",
+    "hours": "Mittagsmenü Mo–Fr 11:30–15:00",
     "phone": "+49 89 94003403",
     "url": "https://www.opentable.com/r/namaste-indisches-restaurant-munchen",
-    "parser": null,
-    "info": "Keine eigene Website mit Speiseplan gefunden. Infos & Reservierung über OpenTable.",
+    "parser": "static",
     "color": "#d17a1f",
     "emoji": "🍛"
   },

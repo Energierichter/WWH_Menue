@@ -1,0 +1,243 @@
+{
+  "asOf": "2026-11-24",
+  "source": "Mittagsmenü laut OpenTable",
+  "notes": [
+    "Mittagsmenü Montag bis Freitag 11:30–15:00 (nur Werktage), alle Gerichte auch zum Mitnehmen",
+    "Zu jedem Menü wahlweise eine Tagessuppe oder ein kleiner gemischter Salat; zu allen Gerichten Basmati-Reis"
+  ],
+  "sections": [
+    {
+      "title": "Mittagsmenü · Vegetarisch",
+      "dishes": [
+        {
+          "name": "Dal Maharani",
+          "description": "Indische Linsen mit Butter zubereitet",
+          "price": "5,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Chana Masala",
+          "description": "Kichererbsen in Curry mit frischen Tomaten und Ingwer",
+          "price": "6,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Vegetable Korma",
+          "description": "Frisches Gemüse in Kokosnuss-Sahne",
+          "price": "7,10 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Vegetable Jalfrezi",
+          "description": "Frisches Gemüse mit Zwiebeln, Tomaten, grünem Chili · 🌶️ sehr scharf",
+          "price": "7,10 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Mittagsmenü · Hähnchen & Ente",
+      "dishes": [
+        {
+          "name": "Chicken Jalfrezi",
+          "description": "Zartes Hühnerfleisch mit Zwiebeln, Tomaten, grünem Chili · 🌶️ sehr scharf",
+          "price": "7,30 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pudina Chicken",
+          "description": "Hühnerfleisch mit Minze und Spezialgewürzen · 🌶️ mittelscharf",
+          "price": "7,10 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Chicken Sabzi",
+          "description": "Hühnerfleisch mit frischem Gemüse",
+          "price": "7,10 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Punjabi Chicken Curry",
+          "description": "Zartes Hühnerfleisch in nordindischer Currysoße · 🌶️ scharf",
+          "price": "7,20 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Chicken-Palak",
+          "description": "Hühnerfleisch in Spinatkreation",
+          "price": "7,30 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Chana Chicken",
+          "description": "Zartes Hühnerfleisch in Kichererbsen und Curry-Masala-Soße",
+          "price": "7,10 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Chicken Masala",
+          "description": "Hühnerfleisch in Masalasoße",
+          "price": "7,30 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Chicken Tikka",
+          "description": "Zarte marinierte Hühnerfleischstücke, gegrillt",
+          "price": "8,50 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Ente Sabzi",
+          "description": "Ente mit Gemüse",
+          "price": "8,30 €",
+          "tags": [
+            "geflügel"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Mittagsmenü · Lamm, Rind & Fisch",
+      "dishes": [
+        {
+          "name": "Chicken-, Lamm- oder Beef-Mango",
+          "description": "Hühnerfleisch, Lammfleisch oder Rindfleisch in Mango-Safran-Sahnesoße",
+          "price": "7,30 €",
+          "tags": [
+            "geflügel",
+            "fleisch",
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Lamm Okra Curry",
+          "description": "Zartes Lammfleisch mit frischem indischen Okra-Gemüse",
+          "price": "7,30 €",
+          "tags": [
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Lamm- oder Beef Vindalu",
+          "description": "Zartes Lamm- oder Rindfleisch mit Kartoffeln, Spezialgewürzen aus Goa · 🌶️ sehr scharf",
+          "price": "7,30 €",
+          "tags": [
+            "fleisch",
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Handi Ghosht",
+          "description": "Lammfleisch mit Ingwer und Koriander · 🌶️ mittelscharf",
+          "price": "7,30 €",
+          "tags": [
+            "fleisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Mutton oder Chicken Pyaza",
+          "description": "Zartes Lamm- oder Hühnerfleisch mit Joghurt, Paprika, Zwiebeln und frischen Tomaten",
+          "price": "7,30 €",
+          "tags": [
+            "fleisch",
+            "geflügel"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Beef Madras",
+          "description": "Zartes Rindfleisch mit Spezialgewürzen und Joghurt · 🌶️ sehr scharf",
+          "price": "7,30 €",
+          "tags": [
+            "rind"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Fisch Masala",
+          "description": "Seelachsfilet mit Tomaten und Zwiebeln in Masala-Soße",
+          "price": "8,30 €",
+          "tags": [
+            "fisch"
+          ],
+          "allergens": []
+        }
+      ]
+    },
+    {
+      "title": "Beilagen",
+      "dishes": [
+        {
+          "name": "Naan",
+          "description": "Frisch gebackenes Fladenbrot aus dem Holzkohle-Lehmofen (Tandoori)",
+          "price": "1,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Pappad",
+          "description": "2 Stück Linsenwaffeln mit frischen Mint-Dips",
+          "price": "2,10 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        },
+        {
+          "name": "Kheere Ka Raita",
+          "description": "Frischer Joghurt mit Gurken",
+          "price": "1,90 €",
+          "tags": [
+            "vegetarisch"
+          ],
+          "allergens": []
+        }
+      ]
+    }
+  ],
+  "kind": "static",
+  "restaurant": "namaste"
+}

@@ -15,7 +15,7 @@ Alle Restaurants am Rosenkavalierplatz, München:
 | BayWa-Kantine (Arabellastraße 4) | Tagesplan der ganzen Woche, automatisch von GenussZeit | https://baywa.sgo.genusszeit.com/menu.html |
 | Bistro Föhn (Nr. 12) | Fotokarte, automatisch übernommen | https://bistrofoehn.de/ |
 | Cedar Lounge (Nr. 12) | Feste Mittagskarte (Foto vom 24.11.2026, `menus/cedar-lounge.json`) | https://www.cedar-lounge.de/ |
-| Namaste (Nr. 12) | Nur Infos & Links (keine eigene Website) | OpenTable |
+| Namaste (Nr. 12) | Feste Mittagskarte (laut OpenTable, `menus/namaste.json`) | OpenTable |
 | AMAL Café (Nr. 14) | Feste Karte (Foto vom 24.11.2026, `menus/amal.json`) | https://amal-cafe.de/ |
 | Subway (Nr. 8) | Nur Infos & Links (bundesweit einheitliche Karte) | https://restaurants.subway.com/ |
 | 030 Kebap (Arabellastraße 19) | Feste Karte (Flyer-Foto vom 24.11.2026, `menus/030-kebap.json`) | Instagram @030.kebap |
