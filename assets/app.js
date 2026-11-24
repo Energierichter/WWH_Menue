@@ -205,9 +205,14 @@
           <div class="profile-actions">
             ${r.url ? `<a class="btn primary" href="${esc(r.url)}" target="_blank" rel="noopener">Zur Website ↗</a>` : ""}
             ${r.phone ? `<a class="btn" href="tel:${esc(r.phone.replace(/\s/g, ""))}">📞 Anrufen</a>` : ""}
+            ${r.photo ? `<button type="button" class="btn" id="showProfilePhoto">📷 Foto ansehen</button>` : ""}
           </div>
         </div>
       </div>`;
+    $("#showProfilePhoto")?.addEventListener("click", () => {
+      $("#lightboxImg").src = r.photo; $("#lightboxImg").alt = `Foto ${r.name}`; $("#lightboxCap").textContent = r.name;
+      $("#lightbox").showModal();
+    });
   }
 
   function renderGallery() {

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T13:23:27+00:00",
+  "updatedAt": "2026-11-24T13:40:06+00:00",
   "restaurants": [
     {
       "id": "stmuv",
@@ -15,7 +15,7 @@
         "2026-11-23"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-24T13:23:27+00:00"
+      "checkedAt": "2026-11-24T13:40:06+00:00"
     },
     {
       "id": "foehn",
@@ -33,7 +33,7 @@
         "2026-11-16"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-24T13:23:27+00:00",
+      "checkedAt": "2026-11-24T13:40:06+00:00",
       "kind": "images"
     },
     {
@@ -52,7 +52,7 @@
         "2026-11-16"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-24T13:23:27+00:00"
+      "checkedAt": "2026-11-24T13:40:06+00:00"
     },
     {
       "id": "cedar-lounge",
@@ -66,7 +66,7 @@
       "emoji": "🌲",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T13:23:27+00:00",
+      "checkedAt": "2026-11-24T13:40:06+00:00",
       "kind": "static"
     },
     {
@@ -83,7 +83,7 @@
       "emoji": "🍛",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T13:23:27+00:00"
+      "checkedAt": "2026-11-24T13:40:06+00:00"
     },
     {
       "id": "farry",
@@ -98,7 +98,7 @@
       "emoji": "🍔",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T13:23:27+00:00"
+      "checkedAt": "2026-11-24T13:40:06+00:00"
     },
     {
       "id": "amal",
@@ -111,7 +111,7 @@
       "emoji": "🥐",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T13:23:27+00:00",
+      "checkedAt": "2026-11-24T13:40:06+00:00",
       "kind": "static"
     },
     {
@@ -127,7 +127,7 @@
       "emoji": "🥖",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T13:23:27+00:00"
+      "checkedAt": "2026-11-24T13:40:06+00:00"
     },
     {
       "id": "030-kebap",
@@ -141,7 +141,7 @@
       "emoji": "🥙",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T13:23:27+00:00",
+      "checkedAt": "2026-11-24T13:40:06+00:00",
       "kind": "static"
     },
     {
@@ -156,8 +156,23 @@
       "emoji": "🥢",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T13:23:27+00:00",
+      "checkedAt": "2026-11-24T13:40:06+00:00",
       "kind": "static"
+    },
+    {
+      "id": "dave-b",
+      "name": "Dave B. Taste Five",
+      "subtitle": "Betriebsrestaurant & Café (Sodexo) – Pizza, Pasta, Salat und Green Grill",
+      "cuisine": "Kantine",
+      "address": "Arabellapark, München",
+      "hours": "Mo–Fr · Café 7:00–15:00 · Essen 11:30–14:00",
+      "photo": "assets/menus/dave-b.jpg",
+      "info": "Wechselndes Angebot an mehreren Stationen (Pizza, Pasta, Salat, Green Grill) – ein Speiseplan wird nicht online veröffentlicht. Ersetzt das frühere Aramark-Restaurant.",
+      "color": "#3a3a3a",
+      "emoji": "🍕",
+      "weeks": [],
+      "status": "info",
+      "checkedAt": "2026-11-24T13:40:06+00:00"
     },
     {
       "id": "weihnachtsmarkt",
@@ -173,7 +188,7 @@
       "emoji": "🎄",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T13:23:27+00:00"
+      "checkedAt": "2026-11-24T13:40:06+00:00"
     }
   ]
 }

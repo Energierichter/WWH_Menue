@@ -20,6 +20,7 @@ Alle Restaurants am Rosenkavalierplatz, München:
 | Subway (Nr. 8) | Nur Infos & Links (bundesweit einheitliche Karte) | https://restaurants.subway.com/ |
 | 030 Kebap (Arabellastraße 19) | Feste Karte (Flyer-Foto vom 24.11.2026, `menus/030-kebap.json`) | Instagram @030.kebap |
 | Jiao Kitchen (Arabellastraße 19) | Feste Karte (Foto vom 24.11.2026, `menus/jiao-kitchen.json`) | Wolt |
+| Dave B. Taste Five (Arabellapark) | Nur Infos & Foto (Sodexo, kein Online-Plan; ersetzt Aramark) | – |
 | Arabellas Glühweinzauber (Nr. 4) | Weihnachtsmarkt, nur Infos – wird nach dem 23.12.2026 ausgeblendet | https://www.gluehwein-festival.de/ |
 
 ## So funktioniert's
