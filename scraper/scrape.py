@@ -81,6 +81,10 @@ def main():
                     raise ValueError("no menu items found")
                 menu["restaurant"] = rid
                 menu["fetchedAt"] = now
+                # optionaler Tagesaushang (von Hand, nach Foto): menus/<id>-heute.json
+                daily_file = ROOT / "menus" / f"{rid}-heute.json"
+                if daily_file.exists():
+                    menu["daily"] = json.loads(daily_file.read_text(encoding="utf-8"))
                 payload = json.dumps(menu, ensure_ascii=False, indent=2)
                 (out_dir / "latest.json").write_text(payload, encoding="utf-8")
                 (out_dir / f"{menu['week']['from']}.json").write_text(payload, encoding="utf-8")

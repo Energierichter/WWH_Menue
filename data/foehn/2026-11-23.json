@@ -43,5 +43,34 @@
     "allergens": {}
   },
   "restaurant": "foehn",
-  "fetchedAt": "2026-11-24T13:03:49+00:00"
+  "fetchedAt": "2026-11-24T13:19:37+00:00",
+  "daily": {
+    "date": "2026-11-24",
+    "source": "Foto der Tafel vor Ort",
+    "photo": "assets/menus/foehn-2026-11-24.jpg",
+    "title": "Mittagsmenü heute",
+    "dishes": [
+      {
+        "category": "Menü 1",
+        "name": "Roastbeef-Carpaccio & Pasta Amatriciana",
+        "description": "Roastbeefbraten-Carpaccio mit Rucola und Babymozzarella · danach Pasta Amatriciana",
+        "price": "14,90 €",
+        "tags": [
+          "rind",
+          "schwein"
+        ],
+        "allergens": []
+      },
+      {
+        "category": "Menü 2",
+        "name": "Hühnersuppe & Truthahn-Rollbraten",
+        "description": "Hühnersuppe mit Hühnerfleisch · danach Truthahn-Rollbraten mit Rahmwirsing",
+        "price": "16,90 €",
+        "tags": [
+          "geflügel"
+        ],
+        "allergens": []
+      }
+    ]
+  }
 }

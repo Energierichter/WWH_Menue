@@ -214,7 +214,15 @@
     const imgs = state.menu.images || [];
     const ts = state.menu.fetchedAt ? new Date(state.menu.fetchedAt).toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" }) : "–";
     $("#updated").textContent = `Zuletzt aktualisiert: ${ts}`;
-    $("#menu").innerHTML = `
+    const daily = state.menu.daily && state.menu.daily.date === todayISO() ? state.menu.daily : null;
+    $("#menu").innerHTML = `${daily ? `
+      <section class="day-block daily">
+        <div class="day-head"><h2>${esc(daily.title || "Mittagsmenü heute")}</h2><span>${fmtDate(daily.date, { weekday: "long", day: "numeric", month: "long" })}</span></div>
+        <div class="static-info"><span>📋 ${esc(daily.source || "Aushang vor Ort")}</span>
+          ${daily.photo ? `<button type="button" class="btn" id="showDaily">📷 Aushang ansehen</button>` : ""}</div>
+        <div class="grid">${daily.dishes.map((d, i) => dishCard(d, `d#${i}`)).join("")}</div>
+      </section>
+      <h2 class="section-title">Karte von der Website</h2>` : ""}
       <p class="gallery-hint">Dieses Restaurant veröffentlicht seine Karte als Fotos – automatisch von der Website übernommen. Zum Vergrößern antippen.</p>
       <div class="gallery">${imgs.map((im, i) => `
         <figure>
@@ -223,6 +231,10 @@
           </button>
           <figcaption>${esc(im.section)}</figcaption>
         </figure>`).join("")}</div>`;
+    $("#showDaily")?.addEventListener("click", () => {
+      $("#lightboxImg").src = daily.photo; $("#lightboxImg").alt = "Foto des Tagesaushangs"; $("#lightboxCap").textContent = `Aushang · ${fmtDate(daily.date, { day: "numeric", month: "long" })}`;
+      $("#lightbox").showModal();
+    });
     $("#menu").querySelectorAll(".shot").forEach((b) => b.addEventListener("click", () => {
       const im = imgs[+b.dataset.i];
       $("#lightboxImg").src = im.src; $("#lightboxImg").alt = im.alt; $("#lightboxCap").textContent = im.section;

@@ -50,6 +50,7 @@ Danach ist die Seite unter `https://<user>.github.io/<repo>/` erreichbar.
    Ohne auslesbaren Speiseplan: `"parser": null` – das Restaurant erscheint dann mit Infos & Links.
    Feste Karte (z. B. abfotografiert): `"parser": "static"` und die Gerichte in `menus/<id>.json` eintragen.
    Saisonal: `"until": "JJJJ-MM-TT"` blendet den Eintrag danach aus.
+   Tagesaushang (z. B. Kreidetafel): `menus/<id>-heute.json` mit `"date"` – wird nur an diesem Tag angezeigt.
 2. Hat die Seite ein neues Format: `scraper/parsers/<name>.py` mit `parse(html, url) -> dict`
    anlegen (Format siehe `stmuv.py`) und in `scraper/parsers/__init__.py` registrieren.
 3. Lokal testen: `pip install -r scraper/requirements.txt && python scraper/scrape.py`
