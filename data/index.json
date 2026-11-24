@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T14:58:41+00:00",
+  "updatedAt": "2026-11-24T14:59:18+00:00",
   "restaurants": [
     {
       "id": "stmuv",
@@ -15,7 +15,7 @@
         "2026-11-23"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:58:41+00:00"
+      "checkedAt": "2026-11-24T14:59:18+00:00"
     },
     {
       "id": "foehn",
@@ -33,7 +33,7 @@
         "2026-11-16"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:58:41+00:00",
+      "checkedAt": "2026-11-24T14:59:18+00:00",
       "kind": "images"
     },
     {
@@ -52,7 +52,7 @@
         "2026-11-16"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:58:41+00:00"
+      "checkedAt": "2026-11-24T14:59:18+00:00"
     },
     {
       "id": "cedar-lounge",
@@ -66,7 +66,7 @@
       "emoji": "🌲",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:58:41+00:00",
+      "checkedAt": "2026-11-24T14:59:18+00:00",
       "kind": "static"
     },
     {
@@ -83,7 +83,7 @@
       "emoji": "🍛",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T14:58:41+00:00"
+      "checkedAt": "2026-11-24T14:59:18+00:00"
     },
     {
       "id": "farry",
@@ -98,7 +98,7 @@
       "emoji": "🍔",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T14:58:41+00:00"
+      "checkedAt": "2026-11-24T14:59:18+00:00"
     },
     {
       "id": "amal",
@@ -111,7 +111,7 @@
       "emoji": "🥐",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:58:41+00:00",
+      "checkedAt": "2026-11-24T14:59:18+00:00",
       "kind": "static"
     },
     {
@@ -127,7 +127,7 @@
       "emoji": "🥖",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T14:58:41+00:00"
+      "checkedAt": "2026-11-24T14:59:18+00:00"
     },
     {
       "id": "030-kebap",
@@ -141,7 +141,7 @@
       "emoji": "🥙",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:58:41+00:00",
+      "checkedAt": "2026-11-24T14:59:18+00:00",
       "kind": "static"
     },
     {
@@ -156,7 +156,7 @@
       "emoji": "🥢",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:58:41+00:00",
+      "checkedAt": "2026-11-24T14:59:18+00:00",
       "kind": "static"
     },
     {
@@ -172,7 +172,7 @@
       "info": "Wechselndes Angebot an mehreren Stationen (Pizza, Pasta, Salat, Green Grill). Für München wird kein Speiseplan online veröffentlicht – der Wochen-PDF auf dave-b.com gehört zum Standort Berlin. Ersetzt das frühere Aramark-Restaurant.",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T14:58:41+00:00"
+      "checkedAt": "2026-11-24T14:59:18+00:00"
     },
     {
       "id": "paulaner",
@@ -190,7 +190,7 @@
         "2026-11-23"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:58:41+00:00"
+      "checkedAt": "2026-11-24T14:59:18+00:00"
     },
     {
       "id": "losteria",
@@ -204,7 +204,7 @@
       "emoji": "🍕",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:58:41+00:00",
+      "checkedAt": "2026-11-24T14:59:18+00:00",
       "kind": "static"
     },
     {
@@ -219,7 +219,7 @@
       "emoji": "🍝",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T14:58:41+00:00",
+      "checkedAt": "2026-11-24T14:59:18+00:00",
       "kind": "static"
     },
     {
@@ -236,7 +236,7 @@
       "emoji": "🎄",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T14:58:41+00:00"
+      "checkedAt": "2026-11-24T14:59:18+00:00"
     }
   ]
 }
