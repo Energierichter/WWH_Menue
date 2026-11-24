@@ -98,6 +98,19 @@
     "emoji": "🥐"
   },
   {
+    "id": "subway",
+    "name": "Subway",
+    "subtitle": "Sandwiches, Wraps & Salate – frisch nach Wunsch belegt",
+    "cuisine": "Sandwiches",
+    "address": "Rosenkavalierplatz 8, 81925 München",
+    "hours": "Mo–Do 9:00–22:30 · Fr 9:00–23:00 · Sa 10:00–23:00 · So 10:00–22:30",
+    "url": "https://restaurants.subway.com/germany/by/munchen",
+    "parser": null,
+    "info": "Bundesweit einheitliche Karte ohne eigenen Tagesplan für diese Filiale. Sandwiches (15 cm oder 30 cm), Wraps und Salate – Brot, Belag, Gemüse und Sauce frei wählbar, viele vegetarische und vegane Optionen.",
+    "color": "#008c15",
+    "emoji": "🥖"
+  },
+  {
     "id": "weihnachtsmarkt",
     "name": "Arabellas Glühweinzauber",
     "subtitle": "Weihnachtsmarkt am Arabellapark – Glühwein, Punsch & Streetfood",

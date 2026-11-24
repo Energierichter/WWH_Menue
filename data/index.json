@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T13:00:21+00:00",
+  "updatedAt": "2026-11-24T13:03:28+00:00",
   "restaurants": [
     {
       "id": "stmuv",
@@ -15,7 +15,7 @@
         "2026-11-23"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-24T13:00:21+00:00"
+      "checkedAt": "2026-11-24T13:03:28+00:00"
     },
     {
       "id": "foehn",
@@ -33,7 +33,7 @@
         "2026-11-16"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-24T13:00:21+00:00",
+      "checkedAt": "2026-11-24T13:03:28+00:00",
       "kind": "images"
     },
     {
@@ -52,7 +52,7 @@
         "2026-11-16"
       ],
       "status": "ok",
-      "checkedAt": "2026-11-24T13:00:21+00:00"
+      "checkedAt": "2026-11-24T13:03:28+00:00"
     },
     {
       "id": "cedar-lounge",
@@ -66,7 +66,7 @@
       "emoji": "🌲",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T13:00:21+00:00",
+      "checkedAt": "2026-11-24T13:03:28+00:00",
       "kind": "static"
     },
     {
@@ -83,7 +83,7 @@
       "emoji": "🍛",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T13:00:21+00:00"
+      "checkedAt": "2026-11-24T13:03:28+00:00"
     },
     {
       "id": "farry",
@@ -98,7 +98,7 @@
       "emoji": "🍔",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T13:00:21+00:00"
+      "checkedAt": "2026-11-24T13:03:28+00:00"
     },
     {
       "id": "amal",
@@ -111,8 +111,23 @@
       "emoji": "🥐",
       "weeks": [],
       "status": "ok",
-      "checkedAt": "2026-11-24T13:00:21+00:00",
+      "checkedAt": "2026-11-24T13:03:28+00:00",
       "kind": "static"
+    },
+    {
+      "id": "subway",
+      "name": "Subway",
+      "subtitle": "Sandwiches, Wraps & Salate – frisch nach Wunsch belegt",
+      "cuisine": "Sandwiches",
+      "address": "Rosenkavalierplatz 8, 81925 München",
+      "hours": "Mo–Do 9:00–22:30 · Fr 9:00–23:00 · Sa 10:00–23:00 · So 10:00–22:30",
+      "url": "https://restaurants.subway.com/germany/by/munchen",
+      "info": "Bundesweit einheitliche Karte ohne eigenen Tagesplan für diese Filiale. Sandwiches (15 cm oder 30 cm), Wraps und Salate – Brot, Belag, Gemüse und Sauce frei wählbar, viele vegetarische und vegane Optionen.",
+      "color": "#008c15",
+      "emoji": "🥖",
+      "weeks": [],
+      "status": "info",
+      "checkedAt": "2026-11-24T13:03:28+00:00"
     },
     {
       "id": "weihnachtsmarkt",
@@ -128,7 +143,7 @@
       "emoji": "🎄",
       "weeks": [],
       "status": "info",
-      "checkedAt": "2026-11-24T13:00:21+00:00"
+      "checkedAt": "2026-11-24T13:03:28+00:00"
     }
   ]
 }
