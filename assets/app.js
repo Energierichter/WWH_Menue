@@ -25,13 +25,39 @@
   const fmtDate = (iso, opts) => new Date(iso + "T12:00:00").toLocaleDateString("de-DE", opts);
   const todayISO = () => { const d = new Date(); d.setMinutes(d.getMinutes() - d.getTimezoneOffset()); return d.toISOString().slice(0, 10); };
 
-  // heute (falls Werktag) + die nächsten Werktage, insgesamt 3
   const isoOf = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
   const WD_NAMES = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
+  // Gesetzliche Feiertage in Bayern/München (muss zu scraper/feiertage.py passen)
+  function easter(y) {
+    const a = y % 19, b = Math.floor(y / 100), c = y % 100, d = Math.floor(b / 4), e = b % 4;
+    const f = Math.floor((b + 8) / 25), g = Math.floor((b - f + 1) / 3);
+    const h = (19 * a + b - d - g + 15) % 30, i = Math.floor(c / 4), k = c % 4;
+    const l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451);
+    const month = Math.floor((h + l - 7 * m + 114) / 31), day = ((h + l - 7 * m + 114) % 31) + 1;
+    return new Date(y, month - 1, day, 12);
+  }
+  const holidayCache = {};
+  function holidays(y) {
+    if (holidayCache[y]) return holidayCache[y];
+    const e = easter(y);
+    const rel = (n) => { const x = new Date(e); x.setDate(x.getDate() + n); return isoOf(x); };
+    const fix = (m, d) => `${y}-${String(m).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+    return (holidayCache[y] = {
+      [fix(1, 1)]: "Neujahr", [fix(1, 6)]: "Heilige Drei Könige", [rel(-2)]: "Karfreitag",
+      [rel(1)]: "Ostermontag", [fix(5, 1)]: "Tag der Arbeit", [rel(39)]: "Christi Himmelfahrt",
+      [rel(50)]: "Pfingstmontag", [rel(60)]: "Fronleichnam", [fix(8, 15)]: "Mariä Himmelfahrt",
+      [fix(10, 3)]: "Tag der Deutschen Einheit", [fix(11, 1)]: "Allerheiligen",
+      [fix(12, 25)]: "1. Weihnachtstag", [fix(12, 26)]: "2. Weihnachtstag",
+    });
+  }
+  const holidayName = (iso) => holidays(+iso.slice(0, 4))[iso];
+  const isWorkday = (d) => d.getDay() >= 1 && d.getDay() <= 5 && !holidayName(isoOf(d));
+
+  // heute (falls Werktag) + die nächsten Werktage – ohne Wochenenden und Feiertage
   function targetDays(n = 3) {
     const out = []; const d = new Date(); d.setHours(12, 0, 0, 0);
     while (out.length < n) {
-      if (d.getDay() >= 1 && d.getDay() <= 5) out.push({ date: isoOf(d), weekday: WD_NAMES[d.getDay()] });
+      if (isWorkday(d)) out.push({ date: isoOf(d), weekday: WD_NAMES[d.getDay()] });
       d.setDate(d.getDate() + 1);
     }
     return out;

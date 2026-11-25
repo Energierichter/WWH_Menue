@@ -25,6 +25,10 @@ jobs:
     outputs:
       run: ${{ steps.check.outputs.run }}
     steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: scraper/feiertage.py
       - id: check
         env:
           # Letzter Tag mit automatischer Aktualisierung (kurz vor Weihnachten).
@@ -37,6 +41,9 @@ jobs:
           if [ "${{ github.event_name }}" = "schedule" ] && [[ "$today" > "$LAST_DAY" ]]; then
             echo "run=false" >> "$GITHUB_OUTPUT"
             echo "Automatische Aktualisierung endete am $LAST_DAY – Lauf übersprungen."
+          elif [ "${{ github.event_name }}" = "schedule" ] && python3 scraper/feiertage.py "$today"; then
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Feiertag in Bayern – Lauf übersprungen."
           elif [ "${{ github.event_name }}" != "schedule" ] || [ "$hour" = "10" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
