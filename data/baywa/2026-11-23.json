@@ -10,91 +10,6 @@
   ],
   "days": [
     {
-      "date": "2026-11-23",
-      "weekday": "Montag",
-      "dishes": [
-        {
-          "category": "Suppentopf",
-          "name": "Tagessuppe",
-          "description": "täglich wechselnd – bitte Hinweis an der Ausgabe beachten",
-          "price": "1,39 €",
-          "tags": [],
-          "allergens": [],
-          "unknown": true
-        },
-        {
-          "category": "Genuss & Leben",
-          "name": "Mediterrane Hähnchenbrust",
-          "description": "Saftig gegarte Hähnchenbrust mit mediterranen Kräutern, serviert in einem aromatischen Sugo aus sonnengereiften Tomaten, Oliven und Knoblauch.",
-          "price": "5,80 €",
-          "tags": [
-            "geflügel"
-          ],
-          "allergens": [
-            "i"
-          ]
-        },
-        {
-          "category": "Genuss & Leben",
-          "name": "Kräuter-Ebly",
-          "description": "",
-          "price": "1,60 €",
-          "tags": [
-            "vegetarisch"
-          ],
-          "allergens": [
-            "a"
-          ]
-        },
-        {
-          "category": "Wochenaktion",
-          "name": "Bayerische Krautroulade",
-          "description": "Herzhaft gefüllte Krautroulade mit Hackfleisch in kräftiger Speck-Zwiebel-Sauce.",
-          "price": "6,10 €",
-          "tags": [
-            "schwein"
-          ],
-          "allergens": [
-            "a",
-            "j"
-          ]
-        },
-        {
-          "category": "Wochenaktion",
-          "name": "Kartoffelpüree",
-          "description": "",
-          "price": "1,60 €",
-          "tags": [],
-          "allergens": [
-            "g"
-          ],
-          "unknown": true
-        },
-        {
-          "category": "Show Cooking",
-          "name": "Pasta mit Genusszeit-Tomatensugo & Burrata",
-          "description": "Al dente gegarte Pasta in unserer eigens entwickelten, schonend gekochten GenussZeit-Tomatensugo, verfeinert mit cremiger Burrata, frischem Basilikum und bestem Olivenöl.",
-          "price": "5,20 €",
-          "tags": [
-            "vegetarisch"
-          ],
-          "allergens": [
-            "g"
-          ]
-        },
-        {
-          "category": "Vegetarische / Vegane Oase",
-          "name": "Indisches Rajma Masala",
-          "description": "Ein herzhaftes, indisches Curry aus zarten Kidneybohnen, die in einer kräftigen Tomaten-Ingwer-Sauce mit Kreuzkümmel, Koriander und Garam Masala geschmort werden. Dazu duftender Basmatireis.",
-          "price": "6,00 €",
-          "tags": [
-            "vegan"
-          ],
-          "allergens": []
-        }
-      ]
-    },
-    {
       "date": "2026-11-24",
       "weekday": "Dienstag",
       "dishes": [
@@ -409,5 +324,5 @@
     }
   },
   "restaurant": "baywa",
-  "fetchedAt": "2026-11-24T16:48:09+00:00"
+  "fetchedAt": "2026-11-25T13:08:46+00:00"
 }
